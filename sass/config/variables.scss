@@ -1,0 +1,26 @@
+/**********************************************************************************
+	File name:      variables.scss
+	Description:    CSS overrides for WordPress variables styles, new variables 
+					definitions and styles for layout components.
+**********************************************************************************/
+/* =====  Fonts ==== */
+$font-family-base: 'Raleway', Arial, sans-serif;
+$font-family-secondary: 'Roboto', Arial, sans-serif;
+
+/* =====  Font-size ==== */
+$font-size-h1: 24px;
+$font-size-txt: 20px;
+$font-size-h1-tablet: 18px;
+$font-size-txt-tablet: 14px;
+$font-size-h1-mobile: 16px;
+$font-size-txt-mobile: 12px;
+
+/* =====  Colors ==== */
+$clr-black: #151515;
+$clr-black2: #212121;
+$clr-white: #FFFFFF;
+$clr-purple: #627EB9;
+$clr-blue: #4A84FF;
+$clr-blue2: #B0BEDC;
+$clr-blue3: #00519E;
+$clr-blue4: #DCE2FC;

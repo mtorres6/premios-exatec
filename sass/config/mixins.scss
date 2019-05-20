@@ -1,0 +1,9 @@
+/******************************************************************************************
+ Mixins
+ Description:	Definition for mixins
+******************************************************************************************/
+@mixin background-image($background-position, $background-size) {
+    background-repeat: no-repeat;
+    background-position: $background-position;
+    background-size: $background-size;
+}
