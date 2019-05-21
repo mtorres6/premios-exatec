@@ -1,6 +1,7 @@
 jQuery(window).on('load', function () {
     $('.carousel').carousel({
-        interval: 4000
+        interval: 3500,
+        pause: false
     });
 
     /* Select arrow control */ 
