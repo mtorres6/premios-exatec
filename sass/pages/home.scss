@@ -132,7 +132,7 @@
             
             &.open-info-campus { height: 70px; }
             
-            &.empty-campus { display: none; }
+            &.empty-campus { display: block; }
 
             .contact-info-list {
                 padding: 0;
@@ -369,6 +369,12 @@ Description:	CSS definition for responsive design
         .carousel-indicators { 
             right: 37%;
             bottom: 7%; 
+        }
+    }
+
+    .contact {
+        .wrapper-contact-info { 
+            &.empty-campus { display: block; }
         }
     }
 }
