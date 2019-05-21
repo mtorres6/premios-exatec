@@ -27,7 +27,8 @@ jQuery(window).on('load', function () {
         var selectedCampus = $(this).children("option:selected").val();
         
         if(selectedCampus == "0") {
-            $('.info-campus').removeClass('open-info-campus'); 
+            $('.info-campus').removeClass('open-info-campus');
+            $('.empty-campus').addClass('open-info-campus');  
         }
 
         if(selectedCampus == "ags") { 

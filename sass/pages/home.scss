@@ -136,6 +136,8 @@
             transition: all 500ms ease;
             
             &.open-info-campus { height: 70px; }
+            
+            &.empty-campus { display: none; }
 
             .contact-info-list {
                 padding: 0;
@@ -335,6 +337,8 @@ Description:	CSS definition for responsive design
             position: relative;
             margin-top: 190px;
             z-index: 1;
+
+            &.empty-campus { display: block; }
 
             .contact-info-list {
                 li {
