@@ -202,6 +202,10 @@ a:hover { text-decoration: none !important; }
     }
 }
 
+.hidden-mobile { display: block; }
+
+.visible-sm { display: none; }
+
 /*****************************************************************************************/
 /******************************************************************************************
  Class: 		$media queries
@@ -228,9 +232,37 @@ a:hover { text-decoration: none !important; }
     .button-general {
         &.button-primary {
             &.button-hero-banner {
-                display: block;
-                margin: 0 auto;
-                max-width: 88%;
+                &.button-hero-mobile {
+                    position: relative;
+                    display: block;
+                    margin: 0 auto;
+                    padding: 14px 35px 14px 18px;
+                    left: 0;
+                    right: 0;
+                    bottom: -33px;
+                    max-width: 320px;
+                    height: 70px;
+                    font-size: $font-size-txt-mobile;
+                    text-align: left;
+
+                    &::after {
+                        position: absolute;
+                        top: 20px;
+                        right: 10px;
+                        width: 9px;
+                        height: 15px;
+                        font-family: $font-awesome;
+                        font-size: 18px;
+                        content: '\f054';
+                        opacity: 0.6;
+                    }
+
+                    .date {  
+                        display: block;
+                        margin-top: 2px;
+                        opacity: 0.6;
+                    }
+                }
             }
         }
     }
@@ -240,6 +272,10 @@ a:hover { text-decoration: none !important; }
         display: block !important; 
         margin: 0 auto;
     }
+
+    .visible-sm { display: block; }
+
+    .hidden-mobile { display: none; }
 }
 
 

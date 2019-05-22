@@ -131,8 +131,6 @@
             transition: all 500ms ease;
             
             &.open-info-campus { height: 70px; }
-            
-            &.empty-campus { display: none; }
 
             .contact-info-list {
                 padding: 0;
@@ -274,9 +272,18 @@ Description:	CSS definition for responsive design
             background-image: url(../img/herobanner-mobile.jpg);
             @include background-image(center, cover); 
         }
+
+        .btn-container {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }        
     }
 
     .info-slider {
+        margin-top: 23px;
+
         .container-custom { padding: 0 15px; }
 
         .content-image {  
