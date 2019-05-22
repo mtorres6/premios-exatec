@@ -155,6 +155,55 @@ a:hover { text-decoration: none !important; }
             color: $clr-blue;
             background-color: $clr-white;
         }
+
+        &.button-hero-desktop,
+        &.button-hero-mobile {      
+            position: relative;
+            text-align: left;
+
+            &::after {
+                position: absolute;
+                font-family: $font-awesome;
+                content: '\f054';
+                opacity: 0.6;
+            }
+
+            .date {  
+                display: block;
+                margin-top: 2px;
+                opacity: 0.6;
+            }
+        }
+
+        &.button-hero-desktop {
+            &::after {
+                top: 19px;
+                right: 12px;
+                width: 21px;
+                height: 48px;
+                font-size: $font-size-arrow-desktop;
+            }
+        }
+
+        &.button-hero-mobile {
+            display: block;
+            margin: 0 auto;
+            padding: 14px 35px 14px 18px;
+            left: 0;
+            right: 0;
+            bottom: -33px;
+            max-width: 320px;
+            height: 70px;
+            font-size: $font-size-txt-mobile;
+
+            &::after {
+                top: 20px;
+                right: 10px;
+                width: 9px;
+                height: 15px;
+                font-size: $font-size-h1-tablet;
+            }
+        }
     }
 }
 
@@ -214,57 +263,23 @@ a:hover { text-decoration: none !important; }
 @media (max-width: 1199px) {
     .button-general {
         font-size: $font-size-h1-mobile;
+
+        &.button-primary {
+            &.button-hero-desktop {
+                &::after { top: 12px; }
+            }
+        }
     }
 }
 
 @media (max-width: 991px) {
-    .button-general {
-        font-size: $font-size-txt-tablet;
-    }
+    .button-general { font-size: $font-size-txt-tablet; }
 }
 
 @media (max-width: 767px) {
     .heading {
         &.heading-01,
         &.heading-02 { font-size: $font-size-h1-mobile; }
-    }
-
-    .button-general {
-        &.button-primary {
-            &.button-hero-banner {
-                &.button-hero-mobile {
-                    position: relative;
-                    display: block;
-                    margin: 0 auto;
-                    padding: 14px 35px 14px 18px;
-                    left: 0;
-                    right: 0;
-                    bottom: -33px;
-                    max-width: 320px;
-                    height: 70px;
-                    font-size: $font-size-txt-mobile;
-                    text-align: left;
-
-                    &::after {
-                        position: absolute;
-                        top: 20px;
-                        right: 10px;
-                        width: 9px;
-                        height: 15px;
-                        font-family: $font-awesome;
-                        font-size: 18px;
-                        content: '\f054';
-                        opacity: 0.6;
-                    }
-
-                    .date {  
-                        display: block;
-                        margin-top: 2px;
-                        opacity: 0.6;
-                    }
-                }
-            }
-        }
     }
 
     .custom-select {
