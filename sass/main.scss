@@ -4,5 +4,9 @@
 @import "config/mixins.scss";
 @import "config/base.scss";
 
+/***************** Components SASS FILES *********************/
+@import "components/header.scss";
+
 /***************** Pages SASS FILES *********************/
 @import "pages/home.scss";
+
