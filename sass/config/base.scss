@@ -112,26 +112,9 @@ a { font-family: $font-family-base; }
 a:hover { text-decoration: none !important; }
 
 .heading {
-    &.heading-01,
-    &.heading-02{
-        margin: 0;
-        font-family: $font-family-base;
-        font-size: $font-size-h1;
-        font-weight: 600;	
-        color: $clr-black;
-        line-height: 28px;
-        letter-spacing: .01em;
-        
-    }
-}
-
-.txt-bold { font-weight: 800; }
-
-.txt-purple { color: $clr-purple; }
+} 
 
 .button-general {
-    font-family: $font-family-base;
-    font-size: $font-size-txt;
     font-weight: 600;
     background: none;
     letter-spacing: 2px;
@@ -143,63 +126,6 @@ a:hover { text-decoration: none !important; }
 	cursor:pointer;
     
     &:hover{ text-decoration: none; }
-
-    &.button-primary {
-        color: $clr-white;
-        background-color: $clr-blue;
-        border: 1px solid $clr-blue;
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $clr-blue;
-            background-color: $clr-white;
-        }
-    }
-}
-
-.custom-select {
-    float: right;
-    padding: 0 50px !important;
-    width: 100%;
-    height: 60px !important;
-    max-width: 300px;
-    font-size: $font-size-h1-tablet !important;
-    font-weight: 700 !important;
-    color: $clr-black2 !important;
-    background: url(../img/icons/icon-select-arrow-open.svg), 
-                url(../img/icons/icon-location.svg) !important;
-    background-position: 90% center, 
-                         6% center !important;
-    background-size: 15px 8px, 
-                     18px 25px;
-    background-repeat: no-repeat !important;
-    background-color: $clr-white !important; 
-    border: 0;
-    border-radius: 0 !important;
-
-    &.opened {
-        background: url(../img/icons/icon-select-arrow-close.svg), 
-                    url(../img/icons/icon-location.svg) !important;
-                    background-position: 90% center, 
-                         6% center !important;
-        background-size: 15px 8px, 
-                        18px 25px;
-        background-repeat: no-repeat !important;
-        background-color: $clr-white !important; 
-    }
-
-    &:focus {
-        border-color: transparent !important;
-        box-shadow: 0 0 0 0 rgba(0,123,255,.0) !important;
-    
-    } 
-
-    option {
-        font-size: $font-size-h1-tablet !important;
-        font-weight: 700 !important;
-        color: $clr-black2 !important;
-    }
 }
 
 /*****************************************************************************************/
@@ -208,38 +134,15 @@ a:hover { text-decoration: none !important; }
  Description:	CSS definition for responsive design
 ******************************************************************************************/
 @media (max-width: 1199px) {
-    .button-general {
-        font-size: $font-size-h1-mobile;
-    }
+
 }
 
 @media (max-width: 991px) {
-    .button-general {
-        font-size: $font-size-txt-tablet;
-    }
+    
 }
 
 @media (max-width: 767px) {
-    .heading {
-        &.heading-01,
-        &.heading-02 { font-size: $font-size-h1-mobile; }
-    }
-
-    .button-general {
-        &.button-primary {
-            &.button-hero-banner {
-                display: block;
-                margin: 0 auto;
-                max-width: 88%;
-            }
-        }
-    }
-
-    .custom-select {
-        float: inherit;
-        display: block !important; 
-        margin: 0 auto;
-    }
+    
 }
 
 
