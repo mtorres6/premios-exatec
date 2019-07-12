@@ -1,1 +1,1 @@
-# exatec
+# premios-exatec
