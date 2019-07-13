@@ -150,7 +150,6 @@ a:hover { text-decoration: none !important; }
     background: none;
     display: block;
     text-align: center;
-	text-transform: uppercase;
 	padding: 12px 22px 12px 16px;
 	@include transition;
 	cursor: pointer;
@@ -165,6 +164,7 @@ a:hover { text-decoration: none !important; }
         background-color: $clr-blue;
         color: $clr-white;
         border: 1px solid $clr-blue;
+        border-radius: 3px;
 
         &:hover {
             background-color: $clr-white;
@@ -173,6 +173,14 @@ a:hover { text-decoration: none !important; }
 
         &.button-form-process {  
             .button-icon { margin-left: 120px; }
+        }
+
+        &.button-input-file { 
+            display: inline; 
+            position: relative;
+            right: 5px;
+            padding: 16px 22px 15px 16px;
+            font-size: $font-size-small;
         }
     }
 }
@@ -184,6 +192,9 @@ a:hover { text-decoration: none !important; }
     li { list-style: none; }
 }
 
+.personal-info-fields {
+    .custom-columns { padding-left: 0; }
+}
 /*****************************************************************************************/
 /******************************************************************************************
  Class: 		$media queries

@@ -198,7 +198,6 @@ a:hover {
   background: none;
   display: block;
   text-align: center;
-  text-transform: uppercase;
   padding: 12px 22px 12px 16px;
   transition: all 500ms ease;
   cursor: pointer; }
@@ -209,18 +208,28 @@ a:hover {
   .button-general.button-primary {
     background-color: #2B54F4;
     color: #FFFFFF;
-    border: 1px solid #2B54F4; }
+    border: 1px solid #2B54F4;
+    border-radius: 3px; }
     .button-general.button-primary:hover {
       background-color: #FFFFFF;
       color: #2B54F4; }
     .button-general.button-primary.button-form-process .button-icon {
       margin-left: 120px; }
+    .button-general.button-primary.button-input-file {
+      display: inline;
+      position: relative;
+      right: 5px;
+      padding: 16px 22px 15px 16px;
+      font-size: 12px; }
 
 .custom-list {
   margin: 0;
   padding-left: 0; }
   .custom-list li {
     list-style: none; }
+
+.personal-info-fields .custom-columns {
+  padding-left: 0; }
 
 /*****************************************************************************************/
 /******************************************************************************************
@@ -505,6 +514,16 @@ Description:	CSS definition for responsive design
   font-size: 12px;
   letter-spacing: 0.48px;
   line-height: 41px; }
+  .form-custom .title-section-checkbox .title-italic {
+    font-family: "Raleway", Arial, sans-serif;
+    font-style: italic; }
+.form-custom .form-link {
+  display: inline-block;
+  margin-left: 8px;
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 12px;
+  color: #2B54F4;
+  transition: all 500ms ease; }
 .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom {
   display: inline-block;
   top: 4px;
@@ -534,6 +553,43 @@ Description:	CSS definition for responsive design
   display: inline-block;
   margin-left: 9px;
   font-family: "Raleway", Arial, sans-serif; }
+.form-custom .wrapper-input.wrapper-file {
+  width: 100%; }
+  .form-custom .wrapper-input.wrapper-file .input-label {
+    display: inline-block; }
+  .form-custom .wrapper-input.wrapper-file .container-input-file {
+    position: relative;
+    width: 100%;
+    max-width: 390px; }
+    .form-custom .wrapper-input.wrapper-file .container-input-file .form-input--file {
+      position: relative;
+      margin: 0;
+      padding-right: 150px;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+      .form-custom .wrapper-input.wrapper-file .container-input-file .form-input--file .form-input--file-text {
+        display: inline-block;
+        padding: 12px 17px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #D4D4D4;
+        border-radius: 3px;
+        cursor: pointer; }
+    .form-custom .wrapper-input.wrapper-file .container-input-file .form-input-file {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+.form-custom .wrapper-input.wrapper-error .input-custom {
+  color: #ff0000;
+  border: 1px solid #ff0000; }
+.form-custom .wrapper-input.wrapper-error .input-label {
+  color: #ff0000; }
 .form-custom .wrapper-input .input-custom {
   padding: 0px 17px;
   font-size: 12px;
@@ -559,25 +615,24 @@ Description:	CSS definition for responsive design
   letter-spacing: 0.48px;
   line-height: 41px; }
 .form-custom.form-process .wrapper-input.wrapper-checkbox {
-  display: inline-block;
-  margin-right: 100px; }
+  display: inline-block; }
 .form-custom.form-process .wrapper-input .input-custom {
   width: 100%; }
 .form-custom.form-process .wrapper-button {
   display: flex;
   justify-content: flex-end; }
 .form-custom.form-footer .wrapper-input .input-custom {
+  padding: 10px;
   width: 100%;
   font-family: "Open-Sans-Bold", Arial, sans-serif;
   font-size: 16px;
-  text-align: left;
   color: #FFFFFF;
+  text-align: left;
   letter-spacing: 0.64px;
   line-height: 18px;
+  background-color: transparent;
   border: 2px solid #FFFFFF;
-  border-radius: 2px;
-  padding: 10px;
-  background-color: transparent; }
+  border-radius: 2px; }
   .form-custom.form-footer .wrapper-input .input-custom::-webkit-input-placeholder {
     color: #FFFFFF; }
   .form-custom.form-footer .wrapper-input .input-custom::-moz-placeholder {
@@ -740,21 +795,46 @@ Description:	CSS definition for responsive design
     Name: proceso1
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
-.process .container-main-title .heading.main-title {
+.process.process1 .container-main-title .heading.main-title {
   margin: 175px 0 15px; }
-.process .wrapper-form .step-container {
+.process.process1 .wrapper-form .step-container {
   margin-bottom: 26px; }
-.process .wrapper-form .info-contact-content .info-contact-txt {
+.process.process1 .wrapper-form .info-contact-content .info-contact-txt {
   margin-bottom: 20px;
   font-family: "Raleway-Medium", Arial, sans-serif;
   font-size: 16px;
   color: #717171; }
-.process .wrapper-form .form-custom.form-process .separator {
+.process.process1 .wrapper-form .form-custom.form-process .separator {
   margin: 20px 0; }
-.process .wrapper-form .form-custom.form-process .wrapper-button {
+.process.process1 .wrapper-form .form-custom.form-process .wrapper-button {
   margin: 77px 0 47px; }
-.process .wrapper-form .separator.end-page-separator {
+.process.process1 .wrapper-form .separator.end-page-separator {
   margin-bottom: 47px; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: proceso2
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+/*****************************************************************************************/
+.process.process2 .container-main-title .heading.main-title {
+  margin: 175px 0 15px; }
+.process.process2 .step-container {
+  margin-bottom: 26px; }
+.process.process2 .form-custom.form-process .title-section-checkbox {
+  margin-bottom: 0; }
+.process.process2 .form-custom.form-process .separator {
+  margin: 20px 0; }
+.process.process2 .form-custom.form-process .personal-info-fields {
+  margin: 20px 0 35px; }
+.process.process2 .form-custom.form-process .wrapper-button {
+  margin: 85px 0 50px; }
+.process.process2 .separator.end-page-separator {
+  margin-bottom: 15px; }
 
 /*****************************************************************************************/
 /******************************************************************************************
