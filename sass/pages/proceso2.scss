@@ -1,0 +1,51 @@
+/******************************************************************************************
+    Name: proceso2
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************//*****************************************************************************************/
+.process {
+    &.process2 {
+        .container-main-title {
+            .heading {
+                &.main-title { margin: 175px 0 15px; }
+            }
+        }
+
+        .step-container { margin-bottom: 26px; }
+
+        .form-custom {
+            &.form-process {
+                .title-section-checkbox { margin-bottom: 0; }
+
+                .separator { margin: 20px 0; }
+
+                .personal-info-fields { margin: 20px 0 35px; }
+        
+                .wrapper-button { margin: 85px 0 50px; }
+            }
+        }
+
+        .separator {
+            &.end-page-separator { margin-bottom: 15px; }
+        }
+    }
+}
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+ 
+}

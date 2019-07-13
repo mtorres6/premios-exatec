@@ -43,19 +43,25 @@
 
                     <form class="form-custom form-process">
                         <p class="title-section-checkbox">Selecciona una opción</p>
-                        <div class="wrapper-input wrapper-checkbox">
-                            <div class="checkbox-custom">
-                                <input type="checkbox" value="1" id="checkbox-persona-moral" name="" class="input-checkbox" />
-                                <label for="checkbox-persona-moral" class="label-checkbox"></label>
+                        <div class="row">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="wrapper-input wrapper-checkbox">
+                                    <div class="checkbox-custom">
+                                        <input type="checkbox" value="1" id="checkbox-persona-moral" name="" class="input-checkbox" />
+                                        <label for="checkbox-persona-moral" class="label-checkbox"></label>
+                                    </div>
+                                    <p class="input-label">Persona moral</p>
+                                </div>
                             </div>
-                            <p class="input-label">Persona moral</p>
-                        </div>
-                        <div class="wrapper-input wrapper-checkbox">
-                            <div class="checkbox-custom">
-                                <input type="checkbox" value="1" id="checkbox-persona-fisica" name="" class="input-checkbox" />
-                                <label for="checkbox-persona-fisica" class="label-checkbox"></label>
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="wrapper-input wrapper-checkbox">
+                                    <div class="checkbox-custom">
+                                        <input type="checkbox" value="1" id="checkbox-persona-fisica" name="" class="input-checkbox" />
+                                        <label for="checkbox-persona-fisica" class="label-checkbox"></label>
+                                    </div>
+                                    <p class="input-label">Persona física</p>
+                                </div>
                             </div>
-                            <p class="input-label">Persona física</p>
                         </div>
                         <hr class="separator">
                         <div class="row">

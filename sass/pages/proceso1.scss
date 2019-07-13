@@ -3,37 +3,38 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .process {
-    .container-main-title {
-        .heading {
-            &.main-title { margin: 175px 0 15px; }
-        }
-    }
-
-    .wrapper-form {
-        .step-container { margin-bottom: 26px; }
-
-        .info-contact-content {
-            .info-contact-txt {
-                margin-bottom: 20px;
-                font-family: $font-family-base-medium;
-                font-size: $font-size-medium;
-                color: #717171;
+    &.process1 {
+        .container-main-title {
+            .heading {
+                &.main-title { margin: 175px 0 15px; }
             }
         }
-        
-        .form-custom {
-            &.form-process {
-                .separator { margin: 20px 0; }
-        
-                .wrapper-button { margin: 77px 0 47px; }
+    
+        .wrapper-form {
+            .step-container { margin-bottom: 26px; }
+    
+            .info-contact-content {
+                .info-contact-txt {
+                    margin-bottom: 20px;
+                    font-family: $font-family-base-medium;
+                    font-size: $font-size-medium;
+                    color: #717171;
+                }
+            }
+            
+            .form-custom {
+                &.form-process {
+                    .separator { margin: 20px 0; }
+            
+                    .wrapper-button { margin: 77px 0 47px; }
+                }
+            }
+    
+            .separator {
+                &.end-page-separator { margin-bottom: 47px; }
             }
         }
-
-        .separator {
-            &.end-page-separator { margin-bottom: 47px; }
-        }
     }
-
 }
 
 /*****************************************************************************************/
