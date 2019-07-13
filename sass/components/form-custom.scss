@@ -5,7 +5,7 @@
 .form-custom {
     .title-section-checkbox {
         font-family: $font-family-base-semiBold;
-        font-size: $font-size-txt-mobile;
+        font-size: $font-size-small;
         letter-spacing: 0.48px;
         line-height: 41px;
     }
@@ -54,7 +54,7 @@
         
         .input-custom {
             padding: 0px 17px;
-            font-size: $font-size-txt-mobile;
+            font-size: $font-size-small;
             letter-spacing: 0.48px;
             line-height: 41px;
             background: none !important;
@@ -82,7 +82,7 @@
         .input-label { 
             margin: 0;
             font-family: $font-family-base-semiBold;
-            font-size: $font-size-txt-mobile;
+            font-size: $font-size-small;
             letter-spacing: 0.48px;
             line-height: 41px;
         }
