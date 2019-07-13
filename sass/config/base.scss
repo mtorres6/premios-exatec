@@ -111,7 +111,36 @@ a { font-family: $font-family-base; }
 
 a:hover { text-decoration: none !important; }
 
+.separator {
+    width: 100%;
+    height: 1px;
+    border: 0;
+    background-color: $clr-gray3;
+
+    &.end-page-separator { height: 7px; }
+}
+
 .heading {
+    &.heading-01 {
+        font-family: $font-family-base-semiBold;
+        font-size: $font-size-h1;
+        letter-spacing: 1.42px;
+        line-height: 46px;
+    }
+
+    &.heading-02 {
+        font-family: $font-family-base;
+        font-size: $font-size-h2;
+        letter-spacing: 0.98px;
+        line-height: 35px;
+    }
+
+    &.heading-03 {
+        font-family: $font-family-base-semiBold;
+        font-size: $font-size-h3;
+        letter-spacing: 0.8px;
+        line-height: 41px;
+    }
 } 
 
 .button-general {
@@ -126,6 +155,13 @@ a:hover { text-decoration: none !important; }
 	cursor:pointer;
     
     &:hover{ text-decoration: none; }
+}
+
+.custom-list {
+    margin: 0;
+    padding-left: 0;
+
+    li { list-style: none; }
 }
 
 /*****************************************************************************************/
