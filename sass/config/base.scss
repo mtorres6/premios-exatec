@@ -127,6 +127,10 @@ a:hover { text-decoration: none !important; }
     
     &:hover{ text-decoration: none; }
 }
+.button-primary{
+    background-color: $clr-blue;
+    color: $clr-white;
+}
 
 /*****************************************************************************************/
 /******************************************************************************************
