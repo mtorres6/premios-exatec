@@ -1,1 +1,4 @@
+#ignored files and folders
 .sass-cache/
+path/
+node_modules/

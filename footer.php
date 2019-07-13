@@ -1,5 +1,58 @@
 
-  <footer class="footer">
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+        <div class="col-1">
+          <div class="logo">
+
+          </div>
+        </div>
+        <div class="col-3">
+            <ul>
+              <li><a href="#">Ganadores</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>  
+        <div class="col-3">
+          <ul>
+            <li><a href="#">¿A quién nominar?</a></li>
+            <li><a href="#">Premios Exatec</a></li>
+          </ul>
+        </div>
+        <div class="col-5">
+          <h1>Conéctate con tu alma máter</h1>
+          <form class="form-custom">
+              <div class="wrapper-input">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <input type="text" name="input1" class="custom-input" placeholder="Matrícula..." />
+                    </div>
+                    <div class="col-sm-7">
+                    <input type="text" name="input2" class="custom-input" placeholder="Email..." />
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-5 offset-7">
+                    <button type="submit" name="submit" value="Send" id="buttonSendContact" class="btn-default2 btn-md button-general button-primary button-menu-footer">Enviar</button>
+                  </div>
+                </div>                      
+              </div>
+          </form>
+        </div>
+      </div>
+      <div class="copy">
+        <div class="row">
+            <div class="col-7">
+              <h2>© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2018 | Aviso de Privacidad</h2>
+            </div>
+            <div class="col-3 offset-2">
+                <div class="social-media">
+                  <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
