@@ -1,0 +1,66 @@
+/******************************************************************************************
+    Name: questions
+    Description: Represent the styles for the page questions 
+******************************************************************************************/
+.questions{
+    padding-bottom: 60px;
+    
+    .block-txt{
+        padding: 60px 0;
+
+        .title1{
+            font-family: $font-family-base-semiBold;
+            font-size: $font-size-medium2;
+            text-align: left;
+            font-weight: 600;
+            letter-spacing: 0.88px;
+            line-height: 30px;
+            color: $clr-blue;
+            margin-top: 35px;
+        }
+
+        .txt{
+            color: $clr-black;
+            font-family: $font-family-base-medium;
+            font-size: $font-size-medium3;
+            font-weight: 500;
+            letter-spacing: 0.72px;
+            line-height: 23px;
+            text-align: left;
+        }
+    }
+}
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 479px) {
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

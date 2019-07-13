@@ -2,11 +2,72 @@
     Name: banner
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
-.banner {
+.banner{
     height: 700px;
     background-color: red;
 
+    &.banner-simple{
+
+        .bg-title{
+            background-color: #FFFFFF;
+            padding: 23px 0px 23px 40px;
+            top: 58%;
+            position: relative;
+            width: 100%;
+            max-width: 49%;
+
+            .title{
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h1;
+                text-align: left;
+                font-weight: 600;
+                letter-spacing: 1.4px;
+                line-height: 41px;
+            }
+        }
+    }
+
+    &.banner-with-txt{
+        height: 411px;
+        padding: 75px 0;
+
+        .title1{
+            font-family: $font-family-base-bold;
+            font-size: $font-size-large2;
+            font-weight: 700;
+            letter-spacing: 1.8px;
+            line-height: 41px;
+            text-align: center;
+            color: $clr-white;
+            margin-bottom: 40px;
+        }
+
+        .title2{
+            font-family: $font-family-base-semiBold;
+            font-size: $font-size-large4;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            line-height: 41px;
+            text-align: center;
+            color: $clr-white;
+        }
+
+        .title3{
+            font-family: $font-family-base-bold;
+            font-size: $font-size-h2;
+            font-weight: 700;
+            line-height: 37px;
+            color: $clr-white;
+            text-align: center;
+            margin-top: 50px;
+        }
+    }
 }
+
+
+
+
+
 
 /*****************************************************************************************/
 /******************************************************************************************
