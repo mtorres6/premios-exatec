@@ -4,7 +4,7 @@
     <div class="banner">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-5 offset-lg-1">
+                <div class="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1">
                     <div class="container-main-title">
                         <h1 class="heading heading-01 main-title">
                             Bienvenido al proceso de nominación
@@ -12,7 +12,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-6 offset-lg-1">
+                <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1">
                     <div class="container-main-txt">
                         <p class="heading heading-02 main-txt">
                             Gracias a tí un EXATEC participará para ser reconocido por su extraordinaria trayectoria.  
@@ -33,7 +33,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
                     <div class="info-contact-content">
                         <h3 class="heading heading-03">1. Datos del contacto</h3>
                         <p class="info-contact-txt">
@@ -59,19 +59,19 @@
                         </div>
                         <hr class="separator">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="name">Nombre completo*</label>
                                     <input type="text" class="input-custom" name="name" placeholder="Fernando Raúl Montemayor Díaz">
                                 </div>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="name">Número de celular</label>
                                     <input type="text" class="input-custom" name="name" placeholder="811 320 78 56">
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-xl-4 col-lg-4">
                                 <div class="wrapper-input">
                                     <label class="input-label" for="name">Email</label>
                                     <input type="text" class="input-custom" name="name" placeholder="fernando.montemayor@gmail.com">
@@ -79,7 +79,10 @@
                             </div>
                         </div>
                         <div class="wrapper-button">
-                            <a class="button-general button-primary" href="#">Siguiente paso</a>
+                            <a class="button-general button-primary button-form-process" href="#">
+                                Siguiente paso 
+                                <i class="fas fa-chevron-right button-icon"></i>
+                            </a>
                         </div>
                     </form>
                 </div>

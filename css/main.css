@@ -1,87 +1,637 @@
+/***************** Basic SASS FILES **********************/
+/******************************************************************************************
+ Font family base (Raleway)
+ Description:	CSS definition for Fonts
+******************************************************************************************/
+@font-face {
+  font-family: 'Raleway';
+  src: url("../fonts/Raleway-Regular.eot");
+  src: url("../fonts/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular.woff2") format("woff2"), url("../fonts/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular.svg#Raleway-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold.eot");
+  src: url("../fonts/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway-Bold.svg#Raleway-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype"), url("../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-SemiBold';
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.ttf") format("truetype"), url("../fonts/Raleway-SemiBold.svg#Raleway-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Medium.eot");
+  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Open-Sans-Bold';
+  src: url("../fonts/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  src: url("../fonts/Roboto-MediumItalic.eot");
+  src: url("../fonts/Roboto-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-MediumItalic.woff2") format("woff2"), url("../fonts/Roboto-MediumItalic.woff") format("woff"), url("../fonts/Roboto-MediumItalic.ttf") format("truetype"), url("../fonts/Roboto-MediumItalic.svg#Roboto-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fa-solid-900.eot");
+  src: url("../fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../fonts/fa-solid-900.woff2") format("woff2"), url("../fonts/fa-solid-900.woff") format("woff"), url("../fonts/fa-solid-900.ttf") format("truetype"), url("../fonts/fa-solid-900.svg#fa-solid-900") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/**********************************************************************************
+	File name:      variables.scss
+	Description:    CSS overrides for WordPress variables styles, new variables 
+					definitions and styles for layout components.
+**********************************************************************************/
+/* =====  Fonts ==== */
+/* =====  Font-size ==== */
+/* =====  Colors ==== */
+/******************************************************************************************
+ Mixins
+ Description:	Definition for mixins
+******************************************************************************************/
+/**********************************************************************************
+	File name:      base.scss
+	Description:    CSS overrides for base styles, new base 
+					definitions and styles for layout components.
+**********************************************************************************/
+/*! HTML5 Boilerplate v7.1.0 | MIT License | https://html5boilerplate.com/ */
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
 /*
-Error: Undefined variable: "$clr-gray55".
-        on line 6 of sass/components/footer.scss
-        from line 12 of sass/main.scss
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
 
-1: /***************** Basic SASS FILES **********************\/
-2: @import "config/fonts.scss";
-3: @import "config/variables.scss";
-4: @import "config/mixins.scss";
-5: @import "config/base.scss";
-6: 
-7: /***************** Components SASS FILES *********************\/
-8: @import "components/header.scss";
-9: @import "components/banner.scss";
-10: @import "components/step-container.scss";
-11: @import "components/form-custom.scss";
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
 
-Backtrace:
-sass/components/footer.scss:6
-sass/main.scss:12
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+  General styles
+  ========================================================================== */
+body {
+  font-family: "Raleway", Arial, sans-serif; }
+
+p,
+li,
+a {
+  font-family: "Raleway", Arial, sans-serif; }
+
+a:hover {
+  text-decoration: none !important; }
+
+.separator {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #F0F0F0; }
+  .separator.end-page-separator {
+    height: 7px; }
+
+.heading.heading-01 {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 35px;
+  letter-spacing: 1.42px;
+  line-height: 46px; }
+.heading.heading-02 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.98px;
+  line-height: 35px; }
+.heading.heading-03 {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 41px; }
+
+.button-general {
+  width: fit-content;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: none;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 22px 12px 16px;
+  transition: all 500ms ease;
+  cursor: pointer; }
+  .button-general:hover {
+    text-decoration: none; }
+  .button-general:hover, .button-general:focus, .button-general:active {
+    outline: 0; }
+  .button-general.button-primary {
+    background-color: #2B54F4;
+    color: #FFFFFF;
+    border: 1px solid #2B54F4; }
+    .button-general.button-primary:hover {
+      background-color: #FFFFFF;
+      color: #2B54F4; }
+    .button-general.button-primary.button-form-process .button-icon {
+      margin-left: 120px; }
+
+.custom-list {
+  margin: 0;
+  padding-left: 0; }
+  .custom-list li {
+    list-style: none; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+ Class: 		$media queries
+ Description:	CSS definition for responsive design
+******************************************************************************************/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$clr-gray55\".\A         on line 6 of sass/components/footer.scss\A         from line 12 of sass/main.scss\A \A 1: /***************** Basic SASS FILES **********************/\A 2: @import \"config/fonts.scss\";\A 3: @import \"config/variables.scss\";\A 4: @import \"config/mixins.scss\";\A 5: @import \"config/base.scss\";\A 6: \A 7: /***************** Components SASS FILES *********************/\A 8: @import \"components/header.scss\";\A 9: @import \"components/banner.scss\";\A 10: @import \"components/step-container.scss\";\A 11: @import \"components/form-custom.scss\";"; }
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+  /* 1 */ }
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit; }
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+.invisible {
+  visibility: hidden; }
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster */
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+
+  pre {
+    white-space: pre-wrap !important; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /*
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+/***************** Components SASS FILES *********************/
+/******************************************************************************************
+    Name: header
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.header {
+  background-color: #292929;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 18px 0; }
+  .header .logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
+  .header .navbar {
+    padding: 0; }
+  .header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0px;
+    padding-left: 0px; }
+  .header .nav-item {
+    /*padding: 5px 0;*/
+    margin-right: 14px; }
+    .header .nav-item:last-child {
+      margin-right: 0; }
+  .header .nav-link {
+    color: #FFFFFF !important;
+    font-family: "Raleway-Bold", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    padding: 13px 0;
+    transition: all 500ms ease; }
+    .header .nav-link:hover {
+      transform: scale(1.1); }
+    .header .nav-link.button-general.button-menu-header:hover {
+      color: #2B54F4 !important; }
+  .header .button-menu-header {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding-right: 6px !important;
+    padding-left: 8px !important; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: banner
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.banner {
+  height: 700px;
+  background-color: red; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: step-coontainer
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.step-container {
+  background-color: #F8F8F8;
+  padding: 24px 0 20px; }
+  .step-container .custom-list.step-list {
+    display: flex;
+    justify-content: center; }
+    .step-container .custom-list.step-list li {
+      font-family: "Raleway-SemiBold", Arial, sans-serif;
+      font-size: 14px;
+      color: #000000; }
+      .step-container .custom-list.step-list li.selected {
+        color: #2B54F4; }
+      .step-container .custom-list.step-list li:nth-child(2) {
+        margin: 0 73px; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: form-custom
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.form-custom .title-section-checkbox {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px; }
+.form-custom .wrapper-input.wrapper-checkbox .checkbox-custom {
+  display: inline-block;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .label-checkbox {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    z-index: 1;
+    background: transparent; }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .input-checkbox {
+    visibility: hidden; }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .input-checkbox[type=checkbox]:checked + label {
+    background: #2B54F4; }
+.form-custom .wrapper-input.wrapper-checkbox .input-label {
+  display: inline-block;
+  margin-left: 9px;
+  font-family: "Raleway", Arial, sans-serif; }
+.form-custom .wrapper-input .input-custom {
+  padding: 0px 17px;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px;
+  background: none !important;
+  border: 1px solid #D4D4D4;
+  border-radius: 3px; }
+  .form-custom .wrapper-input .input-custom:focus, .form-custom .wrapper-input .input-custom:active, .form-custom .wrapper-input .input-custom:hover {
+    outline: 0; }
+  .form-custom .wrapper-input .input-custom::-webkit-input-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom::-moz-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom:-ms-input-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom:-moz-placeholder {
+    color: #000000; }
+.form-custom .wrapper-input .input-label {
+  margin: 0;
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px; }
+.form-custom.form-process .wrapper-input.wrapper-checkbox {
+  display: inline-block;
+  margin-right: 100px; }
+.form-custom.form-process .wrapper-input .input-custom {
+  width: 100%; }
+.form-custom.form-process .wrapper-button {
+  display: flex;
+  justify-content: flex-end; }
+.form-custom.form-footer .wrapper-input .input-custom {
+  width: 100%;
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #FFFFFF;
+  letter-spacing: 0.64px;
+  line-height: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: transparent; }
+  .form-custom.form-footer .wrapper-input .input-custom::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom::-moz-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom:-ms-input-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom:-moz-placeholder {
+    color: #FFFFFF; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: footer
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.footer {
+  background-color: #292929;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 50px 0 25px; }
+  .footer .button-menu-footer {
+    border: 2px solid #2B54F4;
+    border-radius: 2px;
+    padding: 7px 40px 7px 40px;
+    width: 100%;
+    margin-top: 15px; }
+  .footer li {
+    margin-bottom: 10px; }
+  .footer li a,
+  .footer h1 {
+    font-family: "Open-Sans-Bold", Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
+    letter-spacing: 0.56px;
+    line-height: 18px;
+    color: #FFFFFF;
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .footer h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 10px; }
+  .footer .copy {
+    margin-top: 60px; }
+  .footer .social-media .fa-instagram {
+    color: #FFFFFF;
+    font-size: 28px; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/***************** Pages SASS FILES *********************/
+/******************************************************************************************
+    Name: home
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: proceso1
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.process .container-main-title .heading.main-title {
+  margin: 175px 0 15px; }
+.process .wrapper-form .step-container {
+  margin-bottom: 26px; }
+.process .wrapper-form .info-contact-content .info-contact-txt {
+  margin-bottom: 20px;
+  font-family: "Raleway-Medium", Arial, sans-serif;
+  font-size: 16px;
+  color: #717171; }
+.process .wrapper-form .form-custom.form-process .separator {
+  margin: 20px 0; }
+.process .wrapper-form .form-custom.form-process .wrapper-button {
+  margin: 77px 0 47px; }
+.process .wrapper-form .separator.end-page-separator {
+  margin-bottom: 47px; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+
+/*# sourceMappingURL=main.css.map */

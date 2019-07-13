@@ -7,7 +7,7 @@
 
           </div>
         </div>
-        <div class="col-3">
+        <div class="col-3">  
             <ul>
               <li><a href="#">Ganadores</a></li>
               <li><a href="#">Preguntas Frecuentes</a></li>
@@ -21,22 +21,24 @@
         </div>
         <div class="col-5">
           <h1>Conéctate con tu alma máter</h1>
-          <form class="form-custom">
-              <div class="wrapper-input">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <input type="text" name="input1" class="custom-input" placeholder="Matrícula..." />
+          <form class="form-custom form-footer"> 
+              <div class="row">
+                  <div class="col-sm-5">
+                    <div class="wrapper-input">
+                      <input type="text" name="input1" class="input-custom" placeholder="Matrícula..." />
                     </div>
-                    <div class="col-sm-7">
-                    <input type="text" name="input2" class="custom-input" placeholder="Email..." />
-                    </div>
-                </div>
-                <div class="row">
-                  <div class="col-5 offset-7">
-                    <button type="submit" name="submit" value="Send" id="buttonSendContact" class="btn-default2 btn-md button-general button-primary button-menu-footer">Enviar</button>
                   </div>
-                </div>                      
+                  <div class="col-sm-7">
+                    <div class="wrapper-input">
+                      <input type="text" name="input2" class="input-custom" placeholder="Email..." />
+                    </div>
+                  </div>
               </div>
+              <div class="row">
+                <div class="col-5 offset-7">
+                  <button type="submit" name="submit" value="Send" id="buttonSendContact" class="btn-default2 btn-md button-general button-primary button-menu-footer">Enviar</button>
+                </div>
+              </div>                      
           </form>
         </div>
       </div>

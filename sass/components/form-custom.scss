@@ -69,13 +69,13 @@
                 color: $clr-black;
             }
             &::-moz-placeholder {
-            color: $clr-black;
+                color: $clr-black;
             }
             &:-ms-input-placeholder {
-            color: $clr-black;
+                color: $clr-black;
             }
             &:-moz-placeholder { 
-            color: $clr-black;
+                color: $clr-black;
             }
         }
 
@@ -98,6 +98,45 @@
             .input-custom { width: 100%; }
         }
 
+        .wrapper-button {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+
+    &.form-footer {
+        .wrapper-input {
+            .input-custom {
+                width: 100%;
+                font-family: $font-family-open-sans;
+                font-size: $font-size-medium;
+                text-align: left;
+                color: $clr-white;
+                letter-spacing: 0.64px;
+                line-height: 18px;
+                border: 2px solid #FFFFFF;
+                border-radius: 2px;
+                padding: 10px; 
+                background-color: transparent;
+
+                &::-webkit-input-placeholder { 
+                    color: $clr-white;
+                }
+
+                &::-moz-placeholder {
+                    color: $clr-white;
+                }
+
+                &:-ms-input-placeholder {
+                    color: $clr-white;
+                }
+                
+                &:-moz-placeholder { 
+                    color: $clr-white;
+                }
+            }
+        }
     }
 }
 
