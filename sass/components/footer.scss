@@ -3,7 +3,7 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .footer{
-    background-color: $clr-grey;
+    background-color: $clr-gray5;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     padding: 50px 0 25px;
 
@@ -32,19 +32,7 @@
         text-transform: uppercase;
         margin-bottom: 10px;
     }
-    input{
-        width: 100%;
-        font-family: $font-family-open-sans;
-        font-size: $font-size-medium;
-        text-align: left;
-        color: $clr-white;
-        letter-spacing: 0.64px;
-        line-height: 18px;
-        border: 2px solid #FFFFFF;
-        border-radius: 2px;
-        padding: 10px; 
-        background-color: transparent;
-    }
+    
     h2{
         font-family: $font-family-montserrat;
         font-size: $font-size-small;

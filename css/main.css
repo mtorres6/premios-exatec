@@ -167,22 +167,60 @@ a {
 a:hover {
   text-decoration: none !important; }
 
+.separator {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #F0F0F0; }
+  .separator.end-page-separator {
+    height: 7px; }
+
+.heading.heading-01 {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 35px;
+  letter-spacing: 1.42px;
+  line-height: 46px; }
+.heading.heading-02 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.98px;
+  line-height: 35px; }
+.heading.heading-03 {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  line-height: 41px; }
+
 .button-general {
+  width: fit-content;
   font-weight: 600;
-  background: none;
   letter-spacing: 2px;
+  background: none;
   display: block;
   text-align: center;
   text-transform: uppercase;
-  padding: 12px 40px 12px 40px;
+  padding: 12px 22px 12px 16px;
   transition: all 500ms ease;
   cursor: pointer; }
   .button-general:hover {
     text-decoration: none; }
+  .button-general:hover, .button-general:focus, .button-general:active {
+    outline: 0; }
+  .button-general.button-primary {
+    background-color: #2B54F4;
+    color: #FFFFFF;
+    border: 1px solid #2B54F4; }
+    .button-general.button-primary:hover {
+      background-color: #FFFFFF;
+      color: #2B54F4; }
+    .button-general.button-primary.button-form-process .button-icon {
+      margin-left: 120px; }
 
-.button-primary {
-  background-color: #2B54F4;
-  color: #FFFFFF; }
+.custom-list {
+  margin: 0;
+  padding-left: 0; }
+  .custom-list li {
+    list-style: none; }
 
 /*****************************************************************************************/
 /******************************************************************************************
@@ -363,11 +401,149 @@ a:hover {
     letter-spacing: 0.14px;
     line-height: 14px;
     text-transform: uppercase;
-    padding: 13px 0; }
+    padding: 13px 0;
+    transition: all 500ms ease; }
+    .header .nav-link:hover {
+      transform: scale(1.1); }
+    .header .nav-link.button-general.button-menu-header:hover {
+      color: #2B54F4 !important; }
   .header .button-menu-header {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     padding-right: 6px !important;
     padding-left: 8px !important; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: banner
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.banner {
+  height: 700px;
+  background-color: red; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: step-coontainer
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.step-container {
+  background-color: #F8F8F8;
+  padding: 24px 0 20px; }
+  .step-container .custom-list.step-list {
+    display: flex;
+    justify-content: center; }
+    .step-container .custom-list.step-list li {
+      font-family: "Raleway-SemiBold", Arial, sans-serif;
+      font-size: 14px;
+      color: #000000; }
+      .step-container .custom-list.step-list li.selected {
+        color: #2B54F4; }
+      .step-container .custom-list.step-list li:nth-child(2) {
+        margin: 0 73px; }
+
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: form-custom
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.form-custom .title-section-checkbox {
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px; }
+.form-custom .wrapper-input.wrapper-checkbox .checkbox-custom {
+  display: inline-block;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 100%;
+  position: relative;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .label-checkbox {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    z-index: 1;
+    background: transparent; }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .input-checkbox {
+    visibility: hidden; }
+  .form-custom .wrapper-input.wrapper-checkbox .checkbox-custom .input-checkbox[type=checkbox]:checked + label {
+    background: #2B54F4; }
+.form-custom .wrapper-input.wrapper-checkbox .input-label {
+  display: inline-block;
+  margin-left: 9px;
+  font-family: "Raleway", Arial, sans-serif; }
+.form-custom .wrapper-input .input-custom {
+  padding: 0px 17px;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px;
+  background: none !important;
+  border: 1px solid #D4D4D4;
+  border-radius: 3px; }
+  .form-custom .wrapper-input .input-custom:focus, .form-custom .wrapper-input .input-custom:active, .form-custom .wrapper-input .input-custom:hover {
+    outline: 0; }
+  .form-custom .wrapper-input .input-custom::-webkit-input-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom::-moz-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom:-ms-input-placeholder {
+    color: #000000; }
+  .form-custom .wrapper-input .input-custom:-moz-placeholder {
+    color: #000000; }
+.form-custom .wrapper-input .input-label {
+  margin: 0;
+  font-family: "Raleway-SemiBold", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.48px;
+  line-height: 41px; }
+.form-custom.form-process .wrapper-input.wrapper-checkbox {
+  display: inline-block;
+  margin-right: 100px; }
+.form-custom.form-process .wrapper-input .input-custom {
+  width: 100%; }
+.form-custom.form-process .wrapper-button {
+  display: flex;
+  justify-content: flex-end; }
+.form-custom.form-footer .wrapper-input .input-custom {
+  width: 100%;
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-size: 16px;
+  text-align: left;
+  color: #FFFFFF;
+  letter-spacing: 0.64px;
+  line-height: 18px;
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 10px;
+  background-color: transparent; }
+  .form-custom.form-footer .wrapper-input .input-custom::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom::-moz-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom:-ms-input-placeholder {
+    color: #FFFFFF; }
+  .form-custom.form-footer .wrapper-input .input-custom:-moz-placeholder {
+    color: #FFFFFF; }
 
 /*****************************************************************************************/
 /******************************************************************************************
@@ -402,18 +578,6 @@ Description:	CSS definition for responsive design
     list-style: none;
     text-transform: uppercase;
     margin-bottom: 10px; }
-  .footer input {
-    width: 100%;
-    font-family: "Open-Sans-Bold", Arial, sans-serif;
-    font-size: 16px;
-    text-align: left;
-    color: #FFFFFF;
-    letter-spacing: 0.64px;
-    line-height: 18px;
-    border: 2px solid #FFFFFF;
-    border-radius: 2px;
-    padding: 10px;
-    background-color: transparent; }
   .footer h2 {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 12px;
@@ -439,6 +603,31 @@ Description:	CSS definition for responsive design
     Name: home
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
+/******************************************************************************************
+    Name: proceso1
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.process .container-main-title .heading.main-title {
+  margin: 175px 0 15px; }
+.process .wrapper-form .step-container {
+  margin-bottom: 26px; }
+.process .wrapper-form .info-contact-content .info-contact-txt {
+  margin-bottom: 20px;
+  font-family: "Raleway-Medium", Arial, sans-serif;
+  font-size: 16px;
+  color: #717171; }
+.process .wrapper-form .form-custom.form-process .separator {
+  margin: 20px 0; }
+.process .wrapper-form .form-custom.form-process .wrapper-button {
+  margin: 77px 0 47px; }
+.process .wrapper-form .separator.end-page-separator {
+  margin-bottom: 47px; }
+
 /*****************************************************************************************/
 /******************************************************************************************
 Class: 		$media queries
