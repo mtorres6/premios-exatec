@@ -9,7 +9,21 @@
 
     .distinctions {}   
     
-    .campus-participants {}
+    .campus-participants {
+        .container-main-title {
+            margin-bottom: 20px; 
+            
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+    }
 
     .testimonial {}
 

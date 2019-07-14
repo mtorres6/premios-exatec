@@ -12,7 +12,35 @@
     
         <div class="distinctions"></div>
     
-        <div class="campus-participants"></div>
+        <div class="campus-participants">
+            <div class="container-main-title">
+                <h2 class="heading heading-01 main-title">
+                    Campus participantes
+                    <hr class="separator small">
+                </h2>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="slider slider-states">
+                            <div class="slider-element">Sinaloa</div>
+                            <div class="slider-element">Zacatecas</div>
+                            <div class="slider-element">Guadalajara</div>
+                            <div class="slider-element">Hidalgo</div>
+                            <div class="slider-element">Toluca</div>
+                            <div class="slider-element">Puebla</div>
+                            <div class="slider-element">Sinaloa</div>
+                            <div class="slider-element">Zacatecas</div>
+                            <div class="slider-element">Guadalajara</div>
+                            <div class="slider-element">Hidalgo</div>
+                            <div class="slider-element">Toluca</div>
+                            <div class="slider-element">Puebla</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     
         <div class="testimonial"></div>
     

@@ -1,0 +1,29 @@
+/******************************************************************************************
+    Name: banner
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.slider {
+    &.slider-states {
+        .slick-slide {
+            &:active,
+            &:focus,
+            &:hover { outline: 0; }
+
+            &.slider-element {
+                position: relative;
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h3;
+                color: $clr-black;
+                text-align: center;
+                letter-spacing: 0.8px;
+                line-height: 41px;
+                z-index: 1;
+            }
+        }
+    }
+}
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/
