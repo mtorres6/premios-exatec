@@ -7,7 +7,6 @@
     background-color: red;
 
     &.banner-simple{
-
         .bg-title{
             background-color: #FFFFFF;
             padding: 23px 0px 23px 40px;
@@ -60,6 +59,42 @@
             color: $clr-white;
             text-align: center;
             margin-top: 50px;
+        }
+    }
+
+    &.banner-small {
+        position: relative;
+        height: 192px;
+        background-color: chocolate;
+
+        .container-banner-txt {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .banner-txt {
+                font-size: $font-size-large2;
+                font-weight: 700;
+                color: $clr-white;
+                letter-spacing: 1.84px;
+                line-height: 41px;
+            }
+        }
+    }
+
+    &.banner-with-button {
+        position: relative;
+        height: 411px;
+        background-color: darkolivegreen;
+
+        .wrapper-button {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }
