@@ -4,7 +4,20 @@ jQuery(window).on('load', function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         nextArrow: '<button class="button-general button-control button-states button-right"><i class="fas fa-chevron-right"></i></button>',
-        prevArrow: '<button class="button-general button-control button-states button-left"><i class="fas fa-chevron-left"></i></button>',
+        prevArrow: '<button class="button-general button-control button-states button-left"><i class="fas fa-chevron-left"></i></button>'
+    });
+
+    $('.slider-testimonial').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        infinite: true,
+        centerPadding: '9%',
+        speed: 500,
+        variableWidth: false,
+        nextArrow: '<button class="button-general button-control button-testimonial button-right"><i class="fas fa-chevron-right"></i></button>',
+        prevArrow: '<button class="button-general button-control button-testimonial button-left"><i class="fas fa-chevron-left"></i></button>'
     });
 
     /*var fileInput = document.querySelector('.form-input-file');

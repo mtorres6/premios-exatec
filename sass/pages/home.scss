@@ -10,9 +10,11 @@
     .distinctions {}   
     
     .campus-participants {
+        margin: 140px 0;
+
         .container-main-title {
-            margin-bottom: 20px; 
-            
+            margin-bottom: 45px; 
+
             .heading {
                 &.main-title {
                     text-align: center;
@@ -25,9 +27,48 @@
         }
     }
 
-    .testimonial {}
+    .testimonial {
+        padding-bottom: 72px;
+        background-color: $clr-gray6;
 
-    .tips {}
+        .container-main-title { 
+            padding: 50px 0; 
+        
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+    }
+
+    .tips {
+        margin-bottom: 130px;
+        
+        .container-main-title {
+            margin: 130px 0 75px; 
+
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+
+        .wrapper-tip {
+            .separator {
+                &.extra-small { margin: 0; }
+            }
+        }
+    }
 
     .banner {
         &.banner-with-button { margin-bottom: 74px; }
