@@ -473,8 +473,7 @@ Description:	CSS definition for responsive design
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .banner {
-  height: 700px;
-  background-color: red; }
+  height: 700px; }
   .banner.banner-simple .bg-title {
     background-color: #FFFFFF;
     padding: 23px 0px 23px 40px;
@@ -536,7 +535,10 @@ Description:	CSS definition for responsive design
   .banner.banner-with-button {
     position: relative;
     height: 411px;
-    background-color: #2f476b; }
+    background-image: url(../img/img-banner-with-button.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
     .banner.banner-with-button .wrapper-button {
       position: absolute;
       margin: 0;
@@ -768,8 +770,7 @@ Description:	CSS definition for responsive design
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .banner {
-  height: 700px;
-  background-color: red; }
+  height: 700px; }
   .banner.banner-simple .bg-title {
     background-color: #FFFFFF;
     padding: 23px 0px 23px 40px;
@@ -831,7 +832,10 @@ Description:	CSS definition for responsive design
   .banner.banner-with-button {
     position: relative;
     height: 411px;
-    background-color: #2f476b; }
+    background-image: url(../img/img-banner-with-button.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
     .banner.banner-with-button .wrapper-button {
       position: absolute;
       margin: 0;
