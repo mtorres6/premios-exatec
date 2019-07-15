@@ -232,6 +232,29 @@ a:hover {
     .button-general.button-secondary:hover {
       color: #000000;
       background-color: #FFFFFF; }
+  .button-general.button-first-banner {
+    padding: 23px 0px 23px 40px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    max-width: 37%;
+    background-color: #2B54F4;
+    color: #FFFFFF;
+    font-family: "Raleway-Medium", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: left; }
+    .button-general.button-first-banner:hover {
+      background-color: #FFFFFF;
+      color: #2B54F4; }
+    .button-general.button-first-banner .title {
+      margin-bottom: 0; }
+    .button-general.button-first-banner .line {
+      border-top: 2px solid #FFFFFF;
+      width: 25%;
+      margin-top: 0;
+      margin-bottom: 0; }
 
 .custom-list {
   margin: 0;
@@ -486,6 +509,8 @@ Description:	CSS definition for responsive design
       color: #FFFFFF;
       text-align: center;
       margin-top: 50px; }
+  .banner.first-banner {
+    position: relative; }
   .banner.banner-small {
     position: relative;
     height: 192px;
@@ -781,6 +806,8 @@ Description:	CSS definition for responsive design
       color: #FFFFFF;
       text-align: center;
       margin-top: 50px; }
+  .banner.first-banner {
+    position: relative; }
   .banner.banner-small {
     position: relative;
     height: 192px;
@@ -818,6 +845,140 @@ Description:	CSS definition for responsive design
     Name: home
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
+.home .nominate-exatec .fa-chevron-right {
+  float: right;
+  margin-top: -33px; }
+.home .nominate-exatec .icon-scroll {
+  position: absolute;
+  float: right;
+  right: 0;
+  width: 4%;
+  bottom: 0; }
+.home .awards-exatec {
+  padding: 70px 0; }
+  .home .awards-exatec .bg-img {
+    z-index: 1;
+    position: relative; }
+  .home .awards-exatec .box-txt {
+    background-color: #f9f9f9;
+    padding: 65px 115px 65px 90px;
+    margin-top: 150px;
+    margin-left: -80px; }
+    .home .awards-exatec .box-txt .first-title {
+      color: #000000;
+      font-family: "Raleway-Bold", Arial, sans-serif;
+      font-size: 28px;
+      text-align: left;
+      margin-bottom: 0; }
+    .home .awards-exatec .box-txt .line1 {
+      border-top: 2px solid #000000;
+      width: 10%;
+      margin-top: 4px;
+      margin-bottom: 30px; }
+    .home .awards-exatec .box-txt .first-txt {
+      color: #000000;
+      font-family: "Raleway-SemiBold", Arial, sans-serif;
+      font-size: 22px;
+      text-align: left; }
+.home .distinctions {
+  overflow: hidden;
+  padding: 120px 0 170px; }
+  .home .distinctions .padd-right {
+    padding-right: 0; }
+  .home .distinctions .box-title {
+    background-color: #f9f9f9;
+    padding: 50px 0 110px;
+    height: 1530px;
+    position: absolute;
+    width: 100%; }
+    .home .distinctions .box-title .txt1 {
+      text-align: center;
+      font-family: "Raleway-Bold", Arial, sans-serif;
+      font-size: 28px;
+      color: #000000; }
+    .home .distinctions .box-title .line3 {
+      border-top: 2px solid #000000;
+      width: 10%;
+      margin: -10px auto 10px; }
+  .home .distinctions .block-title {
+    background-color: #000000;
+    padding: 33px;
+    margin-top: 38%; }
+    .home .distinctions .block-title .txt {
+      font-family: "Raleway-Medium", Arial, sans-serif;
+      font-size: 33px;
+      font-weight: 500;
+      letter-spacing: 1.32px;
+      line-height: 46px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 0; }
+  .home .distinctions .img1 {
+    height: 571px;
+    margin-left: -30px;
+    margin-top: 27%; }
+  .home .distinctions .box-text {
+    background-color: #FFFFFF;
+    padding: 50px 110px;
+    margin-top: -53%; }
+    .home .distinctions .box-text .text {
+      font-family: "Raleway-Medium", Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      line-height: 46px;
+      text-align: left;
+      color: #000000; }
+  .home .distinctions .block-two {
+    margin-top: 100px; }
+    .home .distinctions .block-two .sin-padd {
+      padding-right: 0;
+      padding-left: 0; }
+    .home .distinctions .block-two .img2 {
+      background-color: #ff0000; }
+    .home .distinctions .block-two .box-text2 {
+      background-color: #FFFFFF;
+      padding: 40px 33px;
+      margin-left: -120px;
+      margin-top: -70px; }
+    .home .distinctions .block-two .text2 {
+      font-family: "Raleway-Medium", Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+      line-height: 46px;
+      text-align: left;
+      color: #000000; }
+    .home .distinctions .block-two .text-win {
+      font-family: "Raleway-SemiBold", Arial, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 37px;
+      color: #2B54F4;
+      text-align: left;
+      margin-bottom: 0; }
+    .home .distinctions .block-two .line-win {
+      border-top: 2px solid #2B54F4;
+      width: 10%;
+      margin: 5px; }
+    .home .distinctions .block-two .fa-chevron-right {
+      color: #2B54F4;
+      text-align: right;
+      float: right;
+      margin-top: -35px; }
+    .home .distinctions .block-two .block-title {
+      background-color: #000000;
+      padding: 33px;
+      margin-top: -18%; }
+      .home .distinctions .block-two .block-title .txt {
+        font-family: "Raleway-Medium", Arial, sans-serif;
+        font-size: 33px;
+        font-weight: 500;
+        letter-spacing: 1.32px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 0; }
 .home .banner.banner-with-button {
   margin-bottom: 74px; }
 

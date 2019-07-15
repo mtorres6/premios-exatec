@@ -8,7 +8,7 @@
 
     &.banner-simple{
         .bg-title{
-            background-color: #FFFFFF;
+            background-color: $clr-white;
             padding: 23px 0px 23px 40px;
             top: 58%;
             position: relative;
@@ -60,6 +60,10 @@
             text-align: center;
             margin-top: 50px;
         }
+    }
+
+    &.first-banner{
+        position: relative;
     }
 
     &.banner-small {

@@ -198,6 +198,36 @@ a:hover { text-decoration: none !important; }
             background-color: $clr-white;
         }
     }
+
+    &.button-first-banner{
+        padding: 23px 0px 23px 40px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        max-width: 37%;
+        background-color: $clr-blue;
+        color: $clr-white;
+        font-family: $font-family-base-medium;
+        font-size: $font-size-h2;
+        font-weight: 500;
+        line-height: 37px;
+        text-align: left;
+
+        &:hover {
+            background-color: $clr-white;
+            color: $clr-blue;
+        }
+
+        .title{
+            margin-bottom: 0;
+        }
+        .line{
+            border-top: 2px solid $clr-white;
+            width: 25%;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
 }
 
 .custom-list {
