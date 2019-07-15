@@ -530,7 +530,7 @@ Description:	CSS definition for responsive design
   .banner.banner-with-button {
     position: relative;
     height: 411px;
-    background-color: darkolivegreen; }
+    background-color: #2f476b; }
     .banner.banner-with-button .wrapper-button {
       position: absolute;
       margin: 0;
@@ -827,7 +827,7 @@ Description:	CSS definition for responsive design
   .banner.banner-with-button {
     position: relative;
     height: 411px;
-    background-color: darkolivegreen; }
+    background-color: #2f476b; }
     .banner.banner-with-button .wrapper-button {
       position: absolute;
       margin: 0;
