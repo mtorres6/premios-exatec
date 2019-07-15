@@ -3,14 +3,199 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .home {
-    .nominate-exatec {}
+    .nominate-exatec {
+        .fa-chevron-right{
+            float: right;
+            margin-top: -33px;
+        }
 
-    .awards-exatec {}
+        .icon-scroll{
+            position: absolute;
+            float: right;
+            right: 0;
+            width: 4%;
+            bottom: 0;
+        }
+    }
 
-    .distinctions {}   
+    .awards-exatec {
+        padding: 70px 0;
+
+        .bg-img{
+            z-index: 1;
+            position: relative;
+        }
+
+        .box-txt{
+            background-color: $clr-gray6;
+            padding: 65px 115px 65px 90px;
+            margin-top: 150px;
+            margin-left: -80px;
+
+            .first-title{
+                color: $clr-black;
+                font-family: $font-family-base-bold;
+                font-size: $font-size-large;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .line1{
+                border-top: 2px solid $clr-black;
+                width: 10%;
+                margin-top: 4px;
+                margin-bottom: 30px;
+            }
+            .first-txt{
+                color: $clr-black;
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-medium2;
+                text-align: left;
+            }
+        }
+    }
+
+    .distinctions {
+        overflow: hidden;
+        padding: 120px 0 170px;
+
+        .padd-right{
+            padding-right: 0;
+        }
+
+        .box-title{
+            background-color: $clr-gray6;
+            padding: 50px 0 110px;
+            height: 1530px;
+            position: absolute;
+            width: 100%;
+
+            .txt1{
+                text-align: center;
+                font-family: $font-family-base-bold;
+                font-size: $font-size-large;
+                color: $clr-black;
+            }
+
+            .line3{
+                border-top: 2px solid $clr-black;
+                width: 10%;
+                margin: -10px auto 10px;
+            }
+        }
+
+        .block-title{
+            background-color: $clr-black;
+            padding: 33px;
+            margin-top: 38%;
+
+            .txt{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large5;
+                font-weight: 500;
+                letter-spacing: 1.32px;
+                line-height: 46px;
+                text-align: center;
+                color: $clr-white;
+                margin-bottom: 0;
+            }
+        }
+
+        .img1{
+            height: 571px;
+            margin-left: -30px;
+            margin-top: 27%;
+        }
+
+        .box-text{
+            background-color: $clr-white;
+            padding: 50px 110px;
+            margin-top: -53%;
+
+            .text{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large4;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+                line-height: 46px;
+                text-align: left;
+                color: $clr-black;
+            }
+        }
+
+        .block-two {
+            margin-top: 100px;
+
+            .sin-padd{
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .img2{
+                background-color: $clr-red;
+            }
+
+            .box-text2{
+                background-color: $clr-white;
+                padding: 40px 33px;
+                margin-left: -120px;
+                margin-top: -70px;
+            }
+
+            .text2{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large4;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+                line-height: 46px;
+                text-align: left;
+                color: $clr-black;
+            }
+
+            .text-win{
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h2;
+                font-weight: 600;
+                line-height: 37px;
+                color: $clr-blue;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .line-win{
+                border-top: 2px solid $clr-blue;
+                width: 10%;
+                margin: 5px;
+            }
+
+            .fa-chevron-right{
+                color: $clr-blue;
+                text-align: right;
+                float: right;
+                margin-top: -35px;
+            }
+
+            .block-title{
+                background-color: $clr-black;
+                padding: 33px;
+                margin-top: -18%;
+    
+                .txt{
+                    font-family: $font-family-base-medium;
+                    font-size: $font-size-large5;
+                    font-weight: 500;
+                    letter-spacing: 1.32px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: $clr-white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }   
     
     .campus-participants {
-        margin: 140px 0;
+        margin: 0 0 140px;
 
         .container-main-title {
             margin-bottom: 45px; 
