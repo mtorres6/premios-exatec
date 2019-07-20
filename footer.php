@@ -1,4 +1,3 @@
-
 <footer class="footer">
 	<div class="container">
 		<div class="row">
@@ -19,16 +18,16 @@
 			</div>
 			<div class="col-5">
 				<h1>Conéctate con tu alma máter</h1>
-				<form class="form-custom form-footer"> 
+				<form action="SendEmailInForm.php" method="POST" class="form-custom form-footer"> 
 					<div class="row">
 						<div class="col-sm-5">
 							<div class="wrapper-input">
-								<input type="text" name="input1" class="input-custom" placeholder="Matrícula..." />
+								<input type="text" id="input1" name="input1" class="input-custom" placeholder="Matrícula..."/>
 							</div>
 						</div>
 						<div class="col-sm-7">
 							<div class="wrapper-input">
-								<input type="text" name="input2" class="input-custom" placeholder="Email..." />
+								<input type="text" id="input2" name="input2" class="input-custom" placeholder="Email..."/>
 							</div>
 						</div>
 					</div>
@@ -64,6 +63,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="ValidationForInputsAndMore\validationForProceso2.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
@@ -72,5 +72,4 @@
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
-
 </html>
