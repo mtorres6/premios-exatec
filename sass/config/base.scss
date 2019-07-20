@@ -294,15 +294,29 @@ a:hover { text-decoration: none !important; }
  Description:	CSS definition for responsive design
 ******************************************************************************************/
 @media (max-width: 1199px) {
-
+    .heading {
+        &.heading-01 {
+            font-size: $font-size-slide-message;
+            letter-spacing: 1px;
+            line-height: 28px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
-    
+    .heading {
+        &.heading-01 {
+            font-size: $font-size-h3;
+            letter-spacing: 1px;
+            line-height: 46px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
-    
+    .button-general {
+        &.button-secondary { font-size: $font-size-regular; }
+    }
 }
 
 

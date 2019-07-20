@@ -256,34 +256,58 @@
     }
 
     .banner {
-        &.banner-with-button { 
-            margin-bottom: 74px; 
-            background-image: url(../img/familiaresyamigos.jpg);
-            background-size: cover;
-            background-position: 0px -115px;
+        &.banner-with-button { margin-bottom: 74px; }
+    } 
+    
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/    
+    @media (max-width: 991px) {
+        .campus-participants {
+            margin: 0 0 70px;
+
+            .container-main-title { margin-bottom: 25px; }
+        }
+
+        .testimonial {
+            padding-bottom: 30px; 
+
+            .container-main-title { padding: 30px 0; }
+        }
+
+        .tips {
+            margin-bottom: 60px;
+
+            .container-main-title { margin: 60px 0; }
         }
     }
+    
+    @media (max-width: 767px) {
+        .campus-participants { margin: 0 0 30px; }
+
+        .testimonial {
+            padding-bottom: 30px;
+
+            .container-main-title { padding: 30px 0; }
+        }
+
+        .tips {
+            margin-bottom: 30px;
+            
+            .container-main-title { margin: 30px 0; }
+        } 
+
+        .banner {
+            &.banner-with-button { 
+                margin-bottom: 0;
+                @include background-image(center, cover); 
+            }
+        }
+    }   
 }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/
-@media (max-width: 1199px) {
-}
-
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 479px) {
- 
-}
 
 
 

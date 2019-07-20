@@ -245,7 +245,7 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xl-2 col-lg-2 offset-xl-1 offset-lg-1">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12 offset-md-1 offset-lg-1 offset-md-1 offset-sm-0 offset-0">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-research"></div>
                             <p class="tip-text tip-title">Investiga</p>
@@ -255,7 +255,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-planning"></div>
                             <p class="tip-text tip-title">Planea</p>
@@ -265,7 +265,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-describe"></div>
                             <p class="tip-text tip-title">Describe</p>
@@ -275,7 +275,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-complete"></div>
                             <p class="tip-text tip-title">Completa</p>
@@ -285,7 +285,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2">
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
                         <div class="wrapper-tip">
                             <div class="icon-tip icon-confirm"></div>
                             <p class="tip-text tip-title">Confirma</p>
@@ -305,6 +305,7 @@
                     Nomina a un <span class="btn-bold-txt">EXATEC</span>
                 </a>
             </div>
+            <div class="filter"></div>
         </div>
     </div>
 
