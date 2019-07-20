@@ -14,7 +14,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="icon-scroll" src="assets/img/Icon-Scrol.svg" alt="">
+                    <img class="icon-scroll" src="img/Icon-Scrol.svg" alt="">
                 </a>
             </div>
         </div>
@@ -23,8 +23,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-4 offset-1">
-                        
-                        <img class="bg-img" src="img/awards-EXATEC.jpg" alt="Premios" />
+                        <img class="bg-img img-fluid" src="img/awards-EXATEC.jpg" alt="Premios">
                     </div>
                     <div class="col-6">
                         <div class="box-txt">
@@ -80,7 +79,7 @@
                 <div class="container-fluid sin-padd">
                     <div class="row">
                         <div class="col-7">
-                            <img class="img2" src="img/Merito-EXATEC.jpg" alt="Mérito" />
+                            <img class="img2 img-fluid" src="img/Merito-EXATEC2.jpg" alt="">
                         </div>
                         <div class="col-5">
                             <div class="box-text2">
