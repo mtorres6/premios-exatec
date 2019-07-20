@@ -1,0 +1,101 @@
+/******************************************************************************************
+    Name: slider
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.slider {
+    .slick-slide {
+        &:active,
+        &:focus,
+        &:hover { outline: 0; }
+    }
+
+    &.slider-states {
+        .slick-slide {
+            &.slider-element {
+                position: relative;
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h3;
+                color: $clr-black;
+                text-align: center;
+                letter-spacing: 0.8px;
+                line-height: 41px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &.slider-testimonial {
+        .slick-list {
+            .slick-track { padding-bottom: 20px; }
+        }
+
+        .slick-slide {
+            &.slider-element {
+                display: flex;
+                justify-content: center;
+
+                .card-container {
+                    display: flex;
+                    padding: 31px 29px;
+                    width: 100%;
+                    max-width: 1008px;
+                    background-color: $clr-white;
+                    border: 1px solid $clr-white;
+                    box-shadow: 0 7px 17px 0 rgba(127, 127, 127, 0.2);
+                    
+                    .left-content {
+                        margin-right: 60px;
+
+                        .wrapper-slide-title {
+                            padding: 9px 35px 5px;
+                            background-color: $clr-black;
+    
+                            .slide-title {
+                                font-family: $font-family-base-bold;
+                                font-size: $font-size-slide-title;
+                                color: $clr-white;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    
+                    .right-content {
+                        margin-top: 30px;
+
+                        .slide-txt {
+                            color: $clr-gray7;
+                            text-align: right;
+
+                            &.slide-message {
+                                font-size: $font-size-slide-message;
+                                line-height: 39px;
+                            }
+
+                            &.slide-author {
+                                margin-bottom: 0;
+                                font-size: $font-size-h2;
+                                letter-spacing: 0.96px;
+                                line-height: 47px;
+                            }
+
+                            &.slide-award {
+                                margin-bottom: 0;
+                                font-family: $font-family-base-medium;
+                                font-size: $font-size-medium3;
+                                color: $clr-black;
+                                font-style: italic;
+                                letter-spacing: 0.72px;
+                                line-height: 47px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*****************************************************************************************/
+/******************************************************************************************
+Class: 		$media queries
+Description:	CSS definition for responsive design
+******************************************************************************************/

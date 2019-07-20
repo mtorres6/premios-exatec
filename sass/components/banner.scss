@@ -4,7 +4,6 @@
 ******************************************************************************************/
 .banner{
     height: 700px;
-    background-color: red;
 
     &.banner-simple{
         background-image: url(../img/10188.jpg);
@@ -100,7 +99,8 @@
     &.banner-with-button {
         position: relative;
         height: 411px;
-        background-color: #2f476b;
+        background-image: url(../img/img-banner-with-button.jpg);
+        @include background-image(center, cover);
 
         .wrapper-button {
             position: absolute;
@@ -111,10 +111,6 @@
         }
     }
 }
-
-
-
-
 
 
 /*****************************************************************************************/
