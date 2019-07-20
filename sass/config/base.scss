@@ -118,6 +118,25 @@ a:hover { text-decoration: none !important; }
     background-color: $clr-gray3;
 
     &.end-page-separator { height: 7px; }
+
+    &.small {
+        width: 80px;
+        height: 3px;
+        background-color: $clr-black;
+    }
+
+    &.extra-small { 
+        width: 20px;
+        height: 3px;
+        background-color: $clr-black;
+    }
+}
+
+.fig-scroll {
+    width: 100px; 
+    height: 100px;
+    background-image: url(../img/icons/icon-banner-scroll.svg);
+    @include background-image(center, contain);
 }
 
 .heading {
@@ -153,7 +172,7 @@ a:hover { text-decoration: none !important; }
 	padding: 12px 22px 12px 16px;
 	@include transition;
 	cursor: pointer;
-    
+     
     &:hover{ text-decoration: none; }
 
     &:hover,
@@ -181,6 +200,80 @@ a:hover { text-decoration: none !important; }
             right: 5px;
             padding: 16px 22px 15px 16px;
             font-size: $font-size-small;
+        }
+    }
+
+    &.button-secondary {
+        font-size: $font-size-h2;
+        color: $clr-white;
+        background-color: transparent;
+        border: 4px solid $clr-white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+        .btn-bold-txt { font-weight: 700; }
+
+        &:hover {
+            color: $clr-black;
+            background-color: $clr-white;
+        }
+    }
+
+    &.button-control {
+        border: 0;
+
+        &.button-states {
+            position: absolute;
+            top: 0;
+            padding: 0;
+            font-size: $font-size-large4;
+            z-index: 2;
+
+            &.button-left { left: 0; }
+
+            &.button-right { right: 0; }
+        }
+
+        &.button-testimonial {
+            position: absolute;
+            top: 45%;
+            padding: 0;
+            font-size: $font-size-slide-title;
+            color: $clr-blue;
+            z-index: 2;
+
+            &.button-left { left: 2%; }
+
+            &.button-right { right: 2%; }
+        }
+    }
+
+    &.button-first-banner{
+        padding: 23px 0px 23px 40px;
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        max-width: 37%;
+        background-color: $clr-blue;
+        color: $clr-white;
+        font-family: $font-family-base-medium;
+        font-size: $font-size-h2;
+        font-weight: 500;
+        line-height: 37px;
+        text-align: left;
+
+        &:hover {
+            background-color: $clr-white;
+            color: $clr-blue;
+        }
+
+        .title{
+            margin-bottom: 0;
+        }
+        .line{
+            border-top: 2px solid $clr-white;
+            width: 25%;
+            margin-top: 0;
+            margin-bottom: 0;
         }
     }
 }

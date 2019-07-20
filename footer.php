@@ -60,6 +60,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/all.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="ValidationForInputsAndMore\validationForProceso2.js"></script>
