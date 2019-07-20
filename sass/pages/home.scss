@@ -202,7 +202,12 @@
     .tips {}
 
     .banner {
-        &.banner-with-button { margin-bottom: 74px; }
+        &.banner-with-button { 
+            margin-bottom: 74px; 
+            background-image: url(../img/familiaresyamigos.jpg);
+            background-size: cover;
+            background-position: 0px -115px;
+        }
     }
 }
 

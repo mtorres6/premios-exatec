@@ -7,6 +7,10 @@
     background-color: red;
 
     &.banner-simple{
+        background-image: url(../img/10188.jpg);
+        background-size: cover;
+        background-position: center center;
+
         .bg-title{
             background-color: $clr-white;
             padding: 23px 0px 23px 40px;
@@ -25,10 +29,13 @@
             }
         }
     }
-
+ 
     &.banner-with-txt{
         height: 411px;
         padding: 75px 0;
+        background-image: url(../img/2605.jpg);
+        background-size: cover;
+        background-position: center center;
 
         .title1{
             font-family: $font-family-base-bold;
@@ -70,6 +77,8 @@
         position: relative;
         height: 192px;
         background-color: chocolate;
+        background-image: url(../img/2605.jpg);
+        background-size: cover;
 
         .container-banner-txt {
             position: absolute;
