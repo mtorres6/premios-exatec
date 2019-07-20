@@ -132,6 +132,13 @@ a:hover { text-decoration: none !important; }
     }
 }
 
+.fig-scroll {
+    width: 100px; 
+    height: 100px;
+    background-image: url(../img/icons/icon-banner-scroll.svg);
+    @include background-image(center, contain);
+}
+
 .heading {
     &.heading-01 {
         font-family: $font-family-base-semiBold;

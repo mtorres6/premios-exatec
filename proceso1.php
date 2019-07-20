@@ -1,27 +1,41 @@
 <?php include('header.php'); ?>
 
 <div class="process process1">
-    <div class="banner">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1">
-                    <div class="container-main-title">
-                        <h1 class="heading heading-01 main-title">
-                            Bienvenido al proceso de nominación
-                        </h1>
-                    </div>
-                </div>
-
-                <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1">
-                    <div class="container-main-txt">
-                        <p class="heading heading-02 main-txt">
-                            Gracias a tí un EXATEC participará para ser reconocido por su extraordinaria trayectoria.  
-                        </p>
+    <div class="banner banner-simple banner-process1">
+        <div class="bg-title">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-8 offset-sm-2">
+                        <h1 class="title">Nomina a un EXATEC</h1>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="fig-scroll"></div>
+        <div class="filter"></div>
     </div>
+        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1">
+                <div class="container-main-title">
+                    <h1 class="heading heading-01 main-title">
+                        Bienvenido al proceso de nominación
+                    </h1>
+                </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1">
+                <div class="container-main-txt">
+                    <p class="heading heading-02 main-txt">
+                        Gracias a tí un EXATEC participará para ser reconocido por su extraordinaria trayectoria.  
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
     <div class="wrapper-form">
         <div class="step-container">
             <ul class="custom-list step-list">

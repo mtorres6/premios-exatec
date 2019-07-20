@@ -3,7 +3,13 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .banner{
-    height: 700px;
+    position: relative;
+    height: 368px;
+
+    &.banner-process1 {  
+        background-image: url(../img/img-banner-process1.jpg);
+        @include background-image(50% 70%, cover);
+    }
 
     &.banner-simple{
         .bg-title{
@@ -13,6 +19,7 @@
             position: relative;
             width: 100%;
             max-width: 49%;
+            z-index: 1;
 
             .title{
                 font-family: $font-family-base-semiBold;
@@ -22,6 +29,22 @@
                 letter-spacing: 1.4px;
                 line-height: 41px;
             }
+        }
+
+        .fig-scroll {
+            position: absolute;
+            right: 60px;
+            bottom: 60px;
+            z-index: 1;
+        }
+
+        .filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
         }
     }
 

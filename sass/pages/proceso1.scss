@@ -6,7 +6,15 @@
     &.process1 {
         .container-main-title {
             .heading {
-                &.main-title { margin: 175px 0 15px; }
+                &.main-title { margin: 60px 0 15px; }
+            }
+        }
+
+        .container-main-txt {
+            margin-bottom: 60px;
+
+            .heading {
+                &.main-txt { margin-bottom: 0; }
             }
         }
     
