@@ -3,12 +3,33 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .header {
-    background-color: $clr-black1;
+    background-color: $clr-white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     padding: 18px 0;
 
+    .header-social{
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
     .logo{
         @include background-image(center, contain);
+        background-image: url(../img/LOGO_PREMIOS_EXATEC.png);
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: -5px;
+
+
+        .logo-a{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .logo-s{
+            visibility: hidden;
+        }
     }
 
     .navbar{
@@ -20,11 +41,11 @@
     }
     .nav-item{
         /*padding: 5px 0;*/
-        margin-right: 14px;
+        margin-right: 13px;
         &:last-child { margin-right: 0; }
     }
-    .nav-link{
-        color: $clr-white !important;
+    #txt-menu{
+        color: $clr-black;
         font-family: $font-family-base-bold;
         font-size: $font-size-small;
         font-weight: 700;
@@ -32,7 +53,7 @@
         letter-spacing: 0.14px;
         line-height: 14px;
         text-transform: uppercase;
-        padding: 13px 0;
+        padding: 19px 0;
         @include transition();
 
         &:hover { transform: scale(1.1); }
@@ -47,22 +68,59 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         padding-right: 6px!important;
         padding-left: 8px!important;
+        color: $clr-white !important;
+        padding-top: 18px!important;
+        border-radius: 0;
+        padding-bottom: 18px !important;
+    }
+
+
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 1199px) {
+
+    }
+
+    @media (max-width: 991px) {
+        
+        .nav-item {
+            margin-right: 9px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+        .nav-item {
+            margin-right: 7px;
+        }
+        #txt-menu{
+            font-size: $font-size-small2;
+        }
+    }
+
+    @media (max-width: 479px) {
+
+        background-color: $clr-black1;
+
+        #txt-menu{
+            color: $clr-white;
+        }
+
+        .btn-none-movil{
+            display: none;
+        }
+
+        .btn-movil{
+
+            .button-menu-header{
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
     }
 }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/
-@media (max-width: 1199px) {
-
-}
-
-@media (max-width: 991px) {
-    
-}
-
-@media (max-width: 767px) {
-    
-}
