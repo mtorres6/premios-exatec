@@ -25,14 +25,14 @@
   <![endif]-->
 
   <header class="header">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-2 offset-1">
+          <div class="col-lg-2 offset-lg-1 col-sm-2">
             <div class="logo">
-                <a href="#" title='Premios Exatec'><span>Logo</span></a>
+                <a class="logo-a" href="#" title='Premios Exatec'><span class="logo-s">Logo</span></a>
             </div>
           </div>
-          <div class="col-8"> 
+          <div class="col-lg-8 offset-lg-1 col-sm-9 offset-sm-1"> 
           <div class="menu">
               <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light">
                           
@@ -44,27 +44,30 @@
                       <ul class="navbar-nav">
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Premios Exatec</a>
+                              <a class="nav-link" id="txt-menu" href="#">Premios Exatec</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">¿A quién nominar?</a>
+                              <a class="nav-link" id="txt-menu" href="#">¿A quién nominar?</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Galería de ganadores</a>
+                              <a class="nav-link" id="txt-menu" href="#">Galería de ganadores</a>
                           </li>
                       
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                              <a class="nav-link" id="txt-menu" href="#">Preguntas Frecuentes</a>
                           </li>
 
                           <li class="nav-item">
-                              <a class="nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
+                              <a id="txt-menu" class="btn-none-movil nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
                           </li>                                    
                       </ul>
                   </div>
               </nav>
+              <div class="btn-movil d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                <a id="txt-menu" class="nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
+              </div>
             </div>
           </div>
         </div>

@@ -17,6 +17,11 @@
 
     li{
         margin-bottom: 10px;
+        list-style: none;
+    }
+
+    .font-color{
+        color: $clr-white;
     }
 
     li a,
@@ -51,10 +56,46 @@
         font-size: $font-size-large;
     }
 
+
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 1199px) {
+
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+
+        ul{
+            padding: 0;
+        }
+
+        h1{
+            margin-top: 20px;
+        }
+        h2{
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 479px) {
+
+        ul{
+            padding: 0;
+        }
+
+        h1{
+            margin-top: 20px;
+        }
+        h2{
+            text-align: left;
+        }
+    }
+
 }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/

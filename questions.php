@@ -5,7 +5,7 @@
             <div class="bg-title">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-8 offset-sm-2">
+                        <div class="col-12 col-sm-8 offset-sm-2">
                             <h1 class="title">Preguntas frecuentes</h1>
                         </div>
                     </div>
@@ -16,7 +16,7 @@
         <div class="block-txt">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8 offset-1">
+                    <div class="col-12 col-lg-8 offset-lg-1 col-sm-8 offset-sm-1">
                         <p class="title1">¿Quién puede nominar?</p>
                         <p class="txt">Cualquier persona, fisica o moral, es bienvenida para realizar su nominación
                         a cualquiera de las disticiones de los Premios Exatec.
@@ -70,7 +70,7 @@
         <div class="banner banner-with-txt">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-sm-6 offset-3">
+                    <div class="col-12 col-sm-6 offset-sm-3">
                         <h2 class="title1">¿No resolvimos tu duda?</h2>
                         <h3 class="title2">Escribe un correo a la siguiente dirección y nosotros te contactaremos.</h3>
                         <p class="title3">premios.exatec.@tec.mx</p>
