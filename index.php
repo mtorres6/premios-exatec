@@ -305,7 +305,6 @@
                     Nomina a un <span class="btn-bold-txt">EXATEC</span>
                 </a>
             </div>
-            <div class="filter"></div>
         </div>
     </div>
 

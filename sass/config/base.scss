@@ -213,9 +213,11 @@ a:hover { text-decoration: none !important; }
         .btn-bold-txt { font-weight: 700; }
 
         &:hover {
-            color: $clr-black;
+            color: $clr-white;
             background-color: $clr-white;
         }
+
+        &.button-banner { background-color: rgba(1, 13, 77, 0.66); } 
     }
 
     &.button-control {
@@ -315,7 +317,11 @@ a:hover { text-decoration: none !important; }
 
 @media (max-width: 767px) {
     .button-general {
-        &.button-secondary { font-size: $font-size-regular; }
+        &.button-secondary { 
+            font-size: $font-size-regular; 
+            
+            &.button-banner { background-color: transparent; }
+        }
     }
 }
 
