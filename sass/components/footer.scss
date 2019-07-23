@@ -51,9 +51,15 @@
     .copy{
         margin-top: 60px;
     }
-    .social-media .fa-instagram{
-        color: $clr-white;
-        font-size: $font-size-large;
+    .social-media{
+        .fa-instagram,
+        .fa-facebook-square,
+        .fa-twitter,
+        .fa-youtube{
+            color: $clr-white;
+            font-size: $font-size-large;
+            margin-left: 23px;
+        }
     }
 
 
@@ -67,7 +73,31 @@
 
     }
 
-    @media (max-width: 991px) {}
+    @media (max-width: 991px) {
+
+        .social-media .fa-instagram, 
+        .social-media .fa-facebook-square, 
+        .social-media .fa-twitter, 
+        .social-media .fa-youtube {
+            font-size: $font-size-small;
+            margin-left: 1px;
+        }
+        h2{
+            font-size: $font-size-small2;
+        }
+        .button-menu-footer{
+            padding: 8px;
+            font-size: $font-size-small4;
+        }
+        li{
+            a{
+                font-size: $font-size-small3;
+            }
+        }
+        h1{
+            font-size: $font-size-small3;
+        }
+    }
 
     @media (max-width: 767px) {
 
@@ -94,6 +124,13 @@
         }
         h2{
             text-align: left;
+        }
+        .social-media .fa-instagram, 
+        .social-media .fa-facebook-square, 
+        .social-media .fa-twitter, 
+        .social-media .fa-youtube {
+            font-size: 25px;
+            margin-left: 1px;
         }
     }
 

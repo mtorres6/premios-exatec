@@ -4,6 +4,41 @@
 ******************************************************************************************/
 .home {
     .nominate-exatec {
+        margin-bottom: 60px;
+
+        .first-banner{
+            .txt1,
+            .txt2,
+            .txt3,
+            .txt4{
+                font-family: $font-family-base-bold;
+                font-size: $font-size-slide-title;
+                text-align:center;
+                margin-bottom: 5px;
+            }
+            .box-txt{
+                padding: 30px;
+            }
+        }
+        .img-banner{
+            width: 25%;
+            position: relative;
+            float: left;
+        }
+        .img1{
+            position: relative;
+            left: 20%;
+            margin-top: -15px;
+        }
+        .img2{
+            position: relative;
+            left: 120px;
+        }
+        .img3{
+            position: relative;
+            left: 64px;
+            margin-top: -15px;
+        }
         .fa-chevron-right{
             float: right;
             margin-top: -33px;
@@ -280,10 +315,39 @@
 
         .button-first-banner{
             font-size: $font-size-medium;
+            bottom: -20px;
         }
+        .first-banner .txt1, 
+        .first-banner .txt2, 
+        .first-banner .txt3, 
+        .first-banner .txt4{
+            font-size: $font-size-large4;
+        }
+
     }
 
     @media (max-width: 991px) {
+
+        .nominate-exatec{
+            .fa-chevron-right{
+                margin-top: -24px;
+            }
+            .first-banner .txt1, 
+            .first-banner .txt2, 
+            .first-banner .txt3, 
+            .first-banner .txt4{
+                font-size: $font-size-medium2;
+            }
+            .img1 {
+                left: 22%;
+            }
+            .img2 {
+                left: 90px;
+            }
+            .img3 {
+                left: 49px;
+            }
+        }
 
         .awards-exatec{
             .box-txt{
@@ -317,7 +381,7 @@
                 .block-title{
 
                     .txt{
-                        font-size: $font-size-medium2;
+                        font-size: $font-size-h3;
                     }
                 }
 
@@ -327,6 +391,9 @@
                 }
 
             } 
+        }
+        .button-first-banner{
+            font-size: $font-size-small4;
         }
          
 
@@ -342,7 +409,8 @@
 
             .box-txt{
                 margin-top: 0;
-                margin-left: 0;
+                margin-left: -46px;
+                padding: 27px 27px 27px 47px;
             }
         }
 
@@ -381,7 +449,7 @@
 
             .box-text{
                 padding: 7px;
-                margin-top: 0;
+                margin-top: -150px;
 
                 .text{
                     font-size: $font-size-regular;
@@ -411,7 +479,7 @@
 
                 .box-text2{
                     padding: 10px;
-                    margin-left: 0;
+                    margin-left: -40px;
                     margin-top: 0;
 
                     .text2{
