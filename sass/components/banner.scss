@@ -93,6 +93,7 @@
 
     &.first-banner{
         position: relative;
+        padding-top: 20px;
     }
 
     &.banner-small {
@@ -147,29 +148,7 @@
         &.banner-simple{
             .bg-title{
                 .title{
-                    font-size: $font-size-medium2;
-                }
-            }
-        } 
-
-        &.banner-with-txt{
-            .title1{
-                font-size: $font-size-large5;
-            }
-            .title2{
-                font-size: $font-size-slide-message;
-            }
-        }
-    }
-
-    @media (max-width: 767px) {
-        
-        &.banner-simple{
-            padding: 15px 0px 12px 40px;
-
-            .bg-title{
-                .title{
-                    font-size:$font-size-medium;
+                    font-size: $font-size-medium;
                 }
             }
         } 
@@ -180,6 +159,30 @@
             }
             .title2{
                 font-size: $font-size-h3;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+        &.banner-simple{
+            padding: 15px 0px 12px 0px;
+            
+            .bg-title{
+                max-width: 53%;
+                
+                .title{
+                    font-size:$font-size-small3;
+                }
+            }
+        } 
+
+        &.banner-with-txt{
+            .title1{
+                font-size: $font-size-h3;
+            }
+            .title2{
+                font-size: $font-size-medium3;
                 line-height: 30px;
             }
         }
@@ -187,6 +190,7 @@
     }
 
     @media (max-width: 479px) {
+        
 
         &.banner-simple{
             padding: 15px 0px 12px 0px;

@@ -47,7 +47,18 @@
 				</div>
 				<div class="col-12 col-lg-3 offset-lg-2 col-sm-2 offset-sm-1">
 					<div class="social-media">
-						<i class="fab fa-instagram"></i>
+						<a href="#">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-youtube"></i>
+						</a>
 					</div>
 				</div>
 			</div>

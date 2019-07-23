@@ -82,29 +82,148 @@
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 1199px) {
-
+        #txt-menu{
+            font-size: $font-size-small4;
+        }
     }
 
     @media (max-width: 991px) {
-        
+        background-color: $clr-black1;
+
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $clr-white;
+            margin-bottom: 7px;
+
+            &.size-line{
+                width: 10px;
+            }
+        }    
+        #txt-menu{
+            font-size: $font-size-small2;
+            color: $clr-white;
+        }
+        .navbar-dark {
+            .navbar-toggler{
+                border-color: transparent; 
+            }
+        }
         .nav-item {
             margin-right: 9px;
+        }
+
+        .navbar-collapse {
+            position: absolute;
+            top: 54px;
+            right: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            transition: all 0.3s ease;
+            display: block;
+            background-color: $clr-black1;
+            z-index: 999;
+        }
+        .navbar-collapse.collapsing {
+            height: auto !important;
+            margin-right: 50%;
+            transition: all 0.3s ease;
+            display: block;
+        }
+        .navbar-collapse.show {
+            right: 0;
+        }
+        .btn-movil{
+
+            .button-menu-header{
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+        .logo{
+            top: 25px;
+        }
+        .btn-none-movil{
+            display: none;
         }
     }
 
     @media (max-width: 767px) {
-        
+
+        background-color: $clr-black1;
+
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $clr-white;
+            margin-bottom: 7px;
+
+            &.size-line{
+                width: 10px;
+            }
+        }    
+        .navbar-light {
+            .navbar-toggler{
+                border-color: transparent; 
+            }
+        }
         .nav-item {
             margin-right: 7px;
         }
         #txt-menu{
             font-size: $font-size-small2;
+            color: $clr-white;
+        }
+        .navbar-dark {
+            .navbar-toggler{
+                border-color: transparent; 
+            }
+        }
+        .btn-movil{
+
+            .button-menu-header{
+                width: 100%;
+                margin-top: 16px;
+            }
+        }
+        .btn-none-movil{
+            display: none;
         }
     }
 
     @media (max-width: 479px) {
 
         background-color: $clr-black1;
+
+        .icon-bar {
+            display: block;
+            width: 22px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: $clr-white;
+            margin-bottom: 7px;
+
+            &.size-line{
+                width: 10px;
+            }
+        }
+
+        .navbar-light {
+            .navbar-toggler{
+                border-color: transparent; 
+            }
+        }
+
+        .logo{
+            top: 25px;
+            margin-left: -30px;
+        }
 
         #txt-menu{
             color: $clr-white;
