@@ -57,7 +57,7 @@
 
     .distinctions {
         overflow: hidden;
-        padding: 120px 0 170px;
+        padding: 60px 0 170px;
 
         .padd-right{
             padding-right: 0;
@@ -124,7 +124,6 @@
         }
 
         .block-two {
-            margin-top: 100px;
 
             .sin-padd{
                 padding-right: 0;
@@ -133,13 +132,16 @@
 
             .img2{
                 background-color: $clr-red;
+                margin-top: -40px;
+                z-index: 1;
+                position: relative;
             }
 
             .box-text2{
                 background-color: $clr-white;
-                padding: 40px 33px;
-                margin-left: -120px;
-                margin-top: -70px;
+                padding: 70px 45px 90px;
+                margin-left: -50px;
+                margin-top: -93px;
             }
 
             .text2{
@@ -178,7 +180,9 @@
             .block-title{
                 background-color: $clr-black;
                 padding: 33px;
-                margin-top: -18%;
+                margin-top: -19px;
+                z-index: 999;
+                position: relative;
     
                 .txt{
                     font-family: $font-family-base-medium;
@@ -256,6 +260,7 @@
     }
 
     .banner {
+<<<<<<< HEAD
         &.banner-with-button { margin-bottom: 74px; }
     } 
     
@@ -306,6 +311,272 @@
             }
         }
     }   
+=======
+        &.banner-with-button {  
+            background-image: url(../img/familiaresyamigos.jpg);
+            background-size: cover;
+            background-position: 0px -115px;
+        }
+    }
+
+
+
+
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: $media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 1199px) {
+
+        .button-first-banner{
+            font-size: $font-size-medium;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+        .awards-exatec{
+            .box-txt{
+
+                .first-txt{
+                    font-size: $font-size-medium;
+                }
+
+            } 
+        }
+
+        .distinctions {
+
+            .block-title{
+
+                .txt{
+                    font-size: $font-size-medium2;
+                }
+            }
+
+            .box-text{
+
+                .text{
+                    font-size: $font-size-h3;
+                    line-height: 35px;
+                }
+            }
+
+            .block-two{
+
+                .block-title{
+
+                    .txt{
+                        font-size: $font-size-medium2;
+                    }
+                }
+
+                .text2{
+                    font-size: $font-size-h3;
+                    line-height: 35px;
+                }
+
+            } 
+        }
+         
+
+    }
+
+    @media (max-width: 767px) {
+
+        .button-first-banner{
+            max-width: 67%;
+        }
+
+        .awards-exatec{
+
+            .box-txt{
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+
+        .distinctions{
+            padding: 60px 0 120px;
+
+            .padd-right{
+                padding-right: 15px;
+            }
+
+            .box-title{
+                padding: 27px 0 110px;
+                height: 1210px;
+
+                .txt1{
+                    font-size: $font-size-h3;
+                }
+            }
+
+            .block-title{
+                padding: 0px;
+                margin-top: 28%;
+                z-index: 999;
+                position: relative;
+
+                .txt{
+                    font-size: $font-size-regular;
+                }
+            }
+
+            .img1{
+                margin-left: 0;
+                margin-top: -18px;
+                height: auto;
+            }
+
+            .box-text{
+                padding: 7px;
+                margin-top: 0;
+
+                .text{
+                    font-size: $font-size-regular;
+                    line-height: 25px;
+                }
+            }
+
+            .block-two{
+
+                .sin-padd{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .img2{
+                    margin-top: -15px;
+                }
+
+                .block-title{
+                    padding: 0;
+                    margin-top: 15px;
+
+                    .txt{
+                        font-size:$font-size-regular;
+                    }
+                }
+
+                .box-text2{
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-top: 0;
+
+                    .text2{
+                        font-size: $font-size-regular;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+
+        .button-first-banner {
+            max-width: 85%;
+            font-size: $font-size-small;
+            padding: 11px;
+        }
+
+        .nominate-exatec {
+            .fa-chevron-right{
+                margin-top: -26px;
+            }
+        }
+        
+        .awards-exatec {
+
+            .box-txt {
+                background-color: #F9F9F9;
+                padding: 65px 115px 65px 90px;
+                margin-top: 0;
+                margin-left: 0;
+                padding: 7px;
+            }
+        }
+
+        .distinctions{
+            padding: 60px 0 120px;
+
+            .padd-right{
+                padding-right: 15px;
+            }
+
+            .box-title{
+                padding: 27px 0 110px;
+                height: 1210px;
+
+                .txt1{
+                    font-size: $font-size-h3;
+                }
+            }
+
+            .block-title{
+                padding: 0px;
+                margin-top: 58%;
+                z-index: 999;
+                position: relative;
+
+                .txt{
+                    font-size: $font-size-regular;
+                }
+            }
+
+            .img1{
+                margin-left: 0;
+                margin-top: -18px;
+                height: auto;
+            }
+
+            .box-text{
+                padding: 7px;
+                margin-top: 0;
+
+                .text{
+                    font-size: $font-size-regular;
+                    line-height: 25px;
+                }
+            }
+
+            .block-two{
+
+                .sin-padd{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .img2{
+                    margin-top: -15px;
+                }
+
+                .block-title{
+                    padding: 0;
+                    margin-top: 15px;
+
+                    .txt{
+                        font-size:$font-size-regular;
+                    }
+                }
+
+                .box-text2{
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-top: 0;
+
+                    .text2{
+                        font-size: $font-size-regular;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
+>>>>>>> pe-dev
 }
 
 
@@ -321,6 +592,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> pe-dev
  
 
 

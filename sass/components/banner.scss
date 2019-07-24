@@ -134,15 +134,96 @@
             z-index: 1;
         }
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> pe-dev
     /*****************************************************************************************/
     /******************************************************************************************
     Class: 		$media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 1199px) {
+<<<<<<< HEAD
         &.banner-with-button { height: 300px; }
     }
+=======
+    }
+
+    @media (max-width: 991px) {
+
+        &.banner-simple{
+            .bg-title{
+                .title{
+                    font-size: $font-size-medium2;
+                }
+            }
+        } 
+
+        &.banner-with-txt{
+            .title1{
+                font-size: $font-size-large5;
+            }
+            .title2{
+                font-size: $font-size-slide-message;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        
+        &.banner-simple{
+            padding: 15px 0px 12px 40px;
+
+            .bg-title{
+                .title{
+                    font-size:$font-size-medium;
+                }
+            }
+        } 
+
+        &.banner-with-txt{
+            .title1{
+                font-size: $font-size-h2;
+            }
+            .title2{
+                font-size: $font-size-h3;
+                line-height: 30px;
+            }
+        }
+
+    }
+
+    @media (max-width: 479px) {
+
+        &.banner-simple{
+            padding: 15px 0px 12px 0px;
+
+            .bg-title{
+                padding: 15px 0px 7px 27px;
+                max-width: 75%;
+
+                .title{
+                    font-size: $font-size-small;
+                }
+            }
+        } 
+
+        &.banner-with-txt{
+            .title1{
+                font-size: $font-size-medium;
+            }
+            .title2{
+                font-size: $font-size-medium;
+            }
+            .title3{
+                font-size: $font-size-medium;
+            }
+        }
+    }
+}
+>>>>>>> pe-dev
 
     @media (max-width: 991px) {
         &.banner-with-button { height: 300px; }
@@ -158,3 +239,9 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> pe-dev
