@@ -51,13 +51,13 @@
 							<i class="fab fa-facebook-square"></i>
 						</a>
 						<a href="#">
-							<i class="fab fa-instagram"></i>
+							<img class="icon-social" src="img/unnamed(1).png" alt="">
+						</a>
+						<a href="#">							
+							<img class="icon-social" src="img/unnamed(2).png" alt="">
 						</a>
 						<a href="#">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-youtube"></i>
+							<img class="icon-social" src="img/unnamed(3).png" alt="">
 						</a>
 					</div>
 				</div>
