@@ -7,6 +7,13 @@
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     padding: 50px 0 25px;
 
+    .logo {
+        width: 100%;
+        height: 29px;
+        background-image: url(../img/LOGO_PREMIOS_EXATEC.png);
+        @include background-image(96% 140%, 239%);
+    }
+
     .button-menu-footer{
         border: 2px solid #2B54F4;
         border-radius: 2px;
@@ -51,9 +58,18 @@
     .copy{
         margin-top: 60px;
     }
-    .social-media .fa-instagram{
-        color: $clr-white;
-        font-size: $font-size-large;
+    .social-media{
+        .icon-social,
+        .fa-facebook-square{
+            color: $clr-white;
+            font-size: $font-size-large;
+            margin-left: 23px;
+            width: 8%;
+        }
+        .fa-facebook-square{
+            position: relative;
+            top: 5px;
+        }
     }
 
 
@@ -67,10 +83,44 @@
 
     }
 
-    @media (max-width: 991px) {}
+    @media (max-width: 991px) {
+
+        .social-media{
+            .icon-social,
+            .fa-facebook-square{
+                font-size: $font-size-medium;
+                margin-left: 13px;
+                width: 11%;
+            }
+            .fa-facebook-square {
+                top: 2px;
+            }
+        } 
+        h2{
+            font-size: $font-size-small2;
+        }
+        .button-menu-footer{
+            padding: 8px;
+            font-size: $font-size-small4;
+        }
+        li{
+            a{
+                font-size: $font-size-small3;
+            }
+        }
+        h1{
+            font-size: $font-size-small3;
+        }
+    }
 
     @media (max-width: 767px) {
 
+        .social-media{
+            .icon-social,
+            .fa-facebook-square{
+                margin-left: 9px;
+            }
+        }
         ul{
             padding: 0;
         }
@@ -94,6 +144,19 @@
         }
         h2{
             text-align: left;
+        }
+        .social-media .fa-instagram, 
+        .social-media .fa-facebook-square, 
+        .social-media .fa-twitter, 
+        .social-media .fa-youtube {
+            font-size: 25px;
+            margin-left: 1px;
+        }
+        .social-media{
+            .icon-social,
+            .fa-facebook-square{
+                width: 9%;
+            }
         }
     }
 

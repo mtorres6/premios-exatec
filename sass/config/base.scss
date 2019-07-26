@@ -217,7 +217,11 @@ a:hover { text-decoration: none !important; }
             background-color: $clr-white;
         }
 
-        &.button-banner { background-color: rgba(1, 13, 77, 0.66); } 
+        &.button-banner { 
+            background-color: rgba(1, 13, 77, 0.66); 
+            
+            &:hover { background-color: $clr-white; }
+        }
     }
 
     &.button-control {
@@ -251,7 +255,7 @@ a:hover { text-decoration: none !important; }
 
     &.button-first-banner{
         padding: 23px 0px 23px 40px;
-        bottom: 0;
+        bottom: -60px;
         position: absolute;
         width: 100%;
         max-width: 37%;

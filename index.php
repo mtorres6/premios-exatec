@@ -2,6 +2,24 @@
     <div class="home">
         <div class="nominate-exatec">
             <div class="banner first-banner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 offset-lg-1">
+                            <div class="box-txt">
+                                <p class="txt1">Identifica,</p>
+                                <p class="txt2">visualiza,</p>
+                                <p class="txt3">reconoce</p>
+                                <p class="txt4">y celebra</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-12">
+                            <img class="img-banner img1" src="img/CEO.png" alt="">
+                            <img class="img-banner img2" src="img/Doctora.png" alt="">
+                            <img class="img-banner img3" src="img/Bastekball.png" alt="">
+                            <img class="img-banner img4" src="img/Arquitecta.png" alt="">
+                        </div>
+                    </div>
+                </div>
                 <a href="#">
                     <div class="button-first-banner button-general">
                         <div class="container-fluid">

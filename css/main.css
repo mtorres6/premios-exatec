@@ -1,22 +1,22 @@
 /*
 Error: Invalid CSS after "=======": expected "{", was "}"
-        on line 152 of sass/components/banner.scss
+        on line 153 of sass/components/banner.scss
         from line 9 of sass/main.scss
 
-147:     @media (max-width: 1199px) {
-148: <<<<<<< HEAD
-149:         &.banner-with-button { height: 300px; }
-150:     }
-151: =======
-152:     }
-153: 
-154:     @media (max-width: 991px) {
-155: 
-156:         &.banner-simple{
-157:             .bg-title{
+148:     @media (max-width: 1199px) {
+149: <<<<<<< HEAD
+150:         &.banner-with-button { height: 300px; }
+151:     }
+152: =======
+153:     }
+154: 
+155:     @media (max-width: 991px) {
+156: 
+157:         &.banner-simple{
+158:             .bg-title{
 
 Backtrace:
-sass/components/banner.scss:152
+sass/components/banner.scss:153
 sass/main.scss:9
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
@@ -77,4 +77,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"=======\": expected \"{\", was \"}\"\A         on line 152 of sass/components/banner.scss\A         from line 9 of sass/main.scss\A \A 147:     @media (max-width: 1199px) {\A 148: <<<<<<< HEAD\A 149:         &.banner-with-button { height: 300px; }\A 150:     }\A 151: =======\A 152:     }\A 153: \A 154:     @media (max-width: 991px) {\A 155: \A 156:         &.banner-simple{\A 157:             .bg-title{"; }
+  content: "Error: Invalid CSS after \"=======\": expected \"{\", was \"}\"\A         on line 153 of sass/components/banner.scss\A         from line 9 of sass/main.scss\A \A 148:     @media (max-width: 1199px) {\A 149: <<<<<<< HEAD\A 150:         &.banner-with-button { height: 300px; }\A 151:     }\A 152: =======\A 153:     }\A 154: \A 155:     @media (max-width: 991px) {\A 156: \A 157:         &.banner-simple{\A 158:             .bg-title{"; }
