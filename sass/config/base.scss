@@ -216,6 +216,12 @@ a:hover { text-decoration: none !important; }
             color: $clr-black;
             background-color: $clr-white;
         }
+
+        &.button-banner { 
+            background-color: rgba(1, 13, 77, 0.66); 
+            
+            &:hover { background-color: $clr-white; }
+        }
     }
 
     &.button-control {
