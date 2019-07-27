@@ -15,7 +15,7 @@
         <div class="filter"></div>
     </div>
     <div class="container-fluid">
-        <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1">
+        <div class="col-xl-6 col-lg-8 offset-xl-1 offset-lg-1">
             <div class="container-main-txt">
                 <p class="heading heading-02 main-txt">
                     Gracias a ti un EXATEC participará para ser reconocido por su extraordinaria trayectoria.  
@@ -27,13 +27,13 @@
     <div class="wrapper-form">
         <div class="step-container">
             <ul class="custom-list step-list">
-                <li >1. Datos de contacto</li>
-                <li>2. Datos del nominado</li>
+                <li >1<span class="hidden-sm-up">. Datos de contacto</span></li>
+                <li>2<span class="hidden-sm-up">. Datos del nominado</span></li>
                 <li class="selected">3. Resumen</li>
             </ul>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid background-form">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
                     <div class="info-contact-content">
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xl-5 col-lg-5 offset-xl-6 offset-lg-6">
+                            <div class="col-xl-5 col-lg-8 offset-xl-6 offset-lg-4">
                                 <div class="wrapper-button">
                                     <a class="button-general button-primary button-form-process" href="#">
                                         Siguiente paso 

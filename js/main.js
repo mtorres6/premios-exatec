@@ -3,8 +3,8 @@ jQuery(window).on('load', function () {
         infinite: true,
         slidesToShow: 6,
         slidesToScroll: 1,
-        nextArrow: '<button class="button-general button-control button-states button-right"><i class="fas fa-chevron-right"></i></button>',
-        prevArrow: '<button class="button-general button-control button-states button-left"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button class="button-general button-control button-states button-right"></button>',
+        prevArrow: '<button class="button-general button-control button-states button-left"></button>',
         responsive: [
             {
                 breakpoint: 768,
@@ -32,8 +32,8 @@ jQuery(window).on('load', function () {
         centerPadding: '9%',
         speed: 500,
         variableWidth: false,
-        nextArrow: '<button class="button-general button-control button-testimonial button-right"><i class="fas fa-chevron-right"></i></button>',
-        prevArrow: '<button class="button-general button-control button-testimonial button-left"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button class="button-general button-control button-testimonial button-right"></button>',
+        prevArrow: '<button class="button-general button-control button-testimonial button-left"></button>',
         responsive: [
             {
                 breakpoint: 1290,

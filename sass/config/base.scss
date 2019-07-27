@@ -225,16 +225,25 @@ a:hover { text-decoration: none !important; }
     }
 
     &.button-control {
+        width: 13px;
+        height: 32px;
         border: 0;
+        @include transition;
+        @include background-image(center, contain);
+
+        &:hover { transform: scale(1.1); }
 
         &.button-states {
             position: absolute;
-            top: 0;
+            top: 6px;
             padding: 0;
-            font-size: $font-size-large4;
             z-index: 2;
+            background-image: url(../img/arrow-right-black.png);
 
-            &.button-left { left: 0; }
+            &.button-left { 
+                left: 0; 
+                transform: rotate(180deg);
+            }
 
             &.button-right { right: 0; }
         }
@@ -246,8 +255,12 @@ a:hover { text-decoration: none !important; }
             font-size: $font-size-slide-title;
             color: $clr-blue;
             z-index: 2;
+            background-image: url(../img/arrow-right-blue.png);
 
-            &.button-left { left: 2%; }
+            &.button-left { 
+                left: 2%; 
+                transform: rotate(180deg);
+            }
 
             &.button-right { right: 2%; }
         }
@@ -294,6 +307,9 @@ a:hover { text-decoration: none !important; }
 .personal-info-fields {
     .custom-columns { padding-left: 0; }
 }
+
+.hidden-sm-up { display: inline-block; }
+
 /*****************************************************************************************/
 /******************************************************************************************
  Class: 		$media queries
@@ -316,17 +332,38 @@ a:hover { text-decoration: none !important; }
             letter-spacing: 1px;
             line-height: 46px;
         }
+
+        &.heading-02 {
+            font-size: $font-size-medium3;
+            line-height: 26px;
+        }
+
+        &.heading-03 { font-size: $font-size-medium; }
+    }
+
+    .fig-scroll {
+        width: 60px;
+        height: 60px;
     }
 }
 
 @media (max-width: 767px) {
     .button-general {
+        &.button-primary { 
+            font-size: $font-size-small; 
+            max-width: 288px;
+        } 
+
         &.button-secondary { 
             font-size: $font-size-regular; 
             
             &.button-banner { background-color: transparent; }
         }
     }
+
+    .fig-scroll { display: none; }
+
+    .hidden-sm-up { display: none; }
 }
 
 

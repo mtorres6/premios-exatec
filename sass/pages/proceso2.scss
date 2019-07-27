@@ -11,42 +11,63 @@
             }
         }
 
-        .step-container { margin-bottom: 26px; }
+        .wrapper-form {
+            .background-form {
+                padding-top: 26px;
+                background-image: url(../img/bg-lines.png);
+                @include background-image(-85%, 82%);
 
-        .form-custom {
-            &.form-process {
-                .title-section-checkbox { margin-bottom: 0; }
-
-                .separator { margin: 20px 0; }
-
-                .personal-info-fields { margin: 20px 0 35px; }
+                .form-custom {
+                    &.form-process {
+                        .title-section-checkbox { margin-bottom: 0; }
         
-                .wrapper-button { margin: 85px 0 50px; }
+                        .separator { margin: 20px 0; }
+        
+                        .personal-info-fields { margin: 20px 0 35px; }
+                
+                        .wrapper-button { margin: 85px 0 50px; }
+                    }
+                }
             }
         }
+        
+        /*****************************************************************************************/
+        /******************************************************************************************
+        Class: 		$media queries
+        Description:	CSS definition for responsive design
+        ******************************************************************************************/
+        @media (max-width: 991px) {
+            .container-main-txt { margin: 30px 0; }
 
-        .separator {
-            &.end-page-separator { margin-bottom: 15px; }
+            .wrapper-form {
+                .background-form { 
+                    @include background-image(215%, 109%); 
+                    
+                    .form-custom {
+                        &.form-process {
+                            .personal-info-fields {
+                                margin: 20px 0 15px;
+
+                                .wrapper-input { 
+                                    margin-bottom: 20px; 
+                                }
+                            }
+                            
+                            .wrapper-button { 
+                                justify-content: flex-start;
+                                margin: 30px 0; 
+                            }
+                        } 
+                    }
+                }
+            } 
+        }
+        
+        @media (max-width: 767px) {
+            .wrapper-form {
+                .background-form { @include background-image(left, cover); }
+            }
         }
     }
 }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/
-@media (max-width: 1199px) {
-}
-
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 479px) {
- 
-}

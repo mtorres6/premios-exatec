@@ -17,15 +17,7 @@
         
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1">
-                <div class="container-main-title">
-                    <h1 class="heading heading-01 main-title">
-                        Bienvenido al proceso de nominación
-                    </h1>
-                </div>
-            </div>
-
-            <div class="col-xl-6 col-lg-6 offset-xl-1 offset-lg-1">
+            <div class="col-xl-6 col-lg-8 offset-xl-1 offset-lg-1">
                 <div class="container-main-txt">
                     <p class="heading heading-02 main-txt">
                         Gracias a tí un EXATEC participará para ser reconocido por su extraordinaria trayectoria.  
@@ -39,12 +31,12 @@
         <div class="step-container">
             <ul class="custom-list step-list">
                 <li class="selected">1. Datos de contacto</li>
-                <li>2. Datos del nominado</li>
-                <li>3. Resumen</li>
+                <li>2<span class="hidden-sm-up">. Datos del nominado</span></li>
+                <li>3<span class="hidden-sm-up">. Resumen</span></li>
             </ul>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid background-form">
             <div class="row">
                 <div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
                     <div class="info-contact-content">
@@ -57,7 +49,7 @@
                     <form class="form-custom form-process">
                         <p class="title-section-checkbox">Selecciona una opción</p>
                         <div class="row">
-                            <div class="col-xl-3 col-lg-3">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
                                         <input type="checkbox" value="1" id="checkbox-persona-moral" name="" class="input-checkbox" />
@@ -66,7 +58,7 @@
                                     <p class="input-label">Persona moral</p>
                                 </div>
                             </div>
-                            <div class="col-xl-3 col-lg-3">
+                            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
                                     <div class="checkbox-custom">
                                         <input type="checkbox" value="1" id="checkbox-persona-fisica" name="" class="input-checkbox" />
@@ -106,7 +98,6 @@
                     </form>
                 </div>
             </div>
-            <hr class="separator end-page-separator">
         </div>
     </div>
 </div>
