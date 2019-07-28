@@ -34,7 +34,6 @@
             </div>
         </div>
     </div>
-    
 
     <div class="wrapper-form">
         <div class="step-container">
