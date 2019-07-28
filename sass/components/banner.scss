@@ -6,6 +6,12 @@
     position: relative;
     height: 368px;
 
+    /*&.first-banner {
+        position: relative;
+        background-image: url(../img/banner-princ.jpg);
+        background-size: cover;
+    }*/
+
     &.banner-simple{
         background-image: url(../img/10188.jpg);
         background-size: cover;
@@ -94,6 +100,7 @@
     &.first-banner{
         position: relative;
         padding-top: 20px;
+        height: auto;
     }
 
     &.banner-small {
