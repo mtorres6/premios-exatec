@@ -3,7 +3,13 @@
         <div class="nominate-exatec">
             <div class="banner first-banner">
                 <div class="container-fluid">
-                    <div class="row">
+                    <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                        <img class="img-fluid" src="img/banner-princ.jpg" alt="">
+                    </div>
+                    <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
+                        <img class="img-fluid" src="img/banner-movil.jpg" alt="">
+                    </div>
+                    <!--div class="row">
                         <div class="col-12 col-lg-3 offset-lg-1">
                             <div class="box-txt">
                                 <p class="txt1">Identifica,</p>
@@ -13,12 +19,14 @@
                             </div>
                         </div>
                         <div class="col-lg-8 col-12">
-                            <img class="img-banner img1" src="img/CEO.png" alt="">
-                            <img class="img-banner img2" src="img/Doctora.png" alt="">
-                            <img class="img-banner img3" src="img/Bastekball.png" alt="">
-                            <img class="img-banner img4" src="img/Arquitecta.png" alt="">
+                            <div class="size-image">
+                                <img class="img-banner img1" src="img/CEO.png" alt="">
+                                <img class="img-banner img2" src="img/Doctora.png" alt="">
+                                <img class="img-banner img3" src="img/Bastekball.png" alt="">
+                                <img class="img-banner img4" src="img/Arquitecta.png" alt="">
+                            </div>
                         </div>
-                    </div>
+                    </div-->
                 </div>
                 <a href="#">
                     <div class="button-first-banner button-general">
@@ -32,7 +40,9 @@
                             </div>
                         </div>
                     </div>
-                    <img class="icon-scroll" src="img/Icon-Scroll.svg" alt="">
+                    <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                        <img class="icon-scroll" src="img/Icon-Scroll.svg" alt="">
+                    </div>
                 </a>
             </div>
         </div>
