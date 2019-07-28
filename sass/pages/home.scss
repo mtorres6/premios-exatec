@@ -55,6 +55,8 @@
 
     .awards-exatec {
         padding: 70px 0;
+        z-index: -1;
+        position: relative;
 
         .bg-img{
             z-index: 1;
@@ -317,7 +319,6 @@
 
         .button-first-banner{
             font-size: $font-size-medium;
-            bottom: -20px;
         }
         .first-banner .txt1, 
         .first-banner .txt2, 
@@ -508,7 +509,8 @@
         }
         
         .awards-exatec {
-
+            padding: 0px 0 50px;
+            
             .box-txt {
                 background-color: #F9F9F9;
                 padding: 65px 115px 65px 90px;

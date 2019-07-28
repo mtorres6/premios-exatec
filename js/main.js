@@ -30,5 +30,18 @@ jQuery(window).on('load', function () {
         fileInputText.textContent = value.replace('C:\\fakepath\\', '');
     });*/
 
+    
+    $(".navbar-toggler, .overlay").on("click", function(){
+        $(".mobileMenu, .overlay").toggleClass("open");
+        $(".mobileMenu, .overlay").removeClass("close2");
+    });
+
+    $(".fa-times").on("click", function(){
+        $(".mobileMenu, .overlay").toggleClass("close2");
+        $(".mobileMenu, .overlay").removeClass("open");
+    });
+
+    
+
 });
 
