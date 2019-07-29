@@ -51,6 +51,7 @@
                             background-color: $clr-black;
     
                             .slide-title {
+                                margin-bottom: 0;
                                 font-family: $font-family-base-bold;
                                 font-size: $font-size-slide-title;
                                 color: $clr-white;
@@ -93,9 +94,160 @@
             }
         }
     }
+    
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/    
+    @media (max-width: 1199px) {
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { max-width: 890px; }
+                } 
+            }
+        }
+    }
+    
+    @media (max-width: 991px) {
+        &.slider-states {
+            .slick-slide {
+                &.slider-element { font-size: $font-size-medium; }
+            }    
+        }
+
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 680px; 
+
+                        .left-content {
+                            .wrapper-slide-title {
+                                width: fit-content;
+
+                                .slide-title { font-size: $font-size-large4; }
+                            }
+                        }
+
+                        .right-content {
+                            .slide-txt {
+                                &.slide-message {
+                                    font-size: $font-size-h3;
+                                    line-height: 32px;
+                                }
+
+                                &.slide-author {
+                                    font-size: $font-size-medium3;
+                                    line-height: 34px;
+                                }
+
+                                &.slide-award { font-size: $font-size-regular; }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+    
+    @media (max-width: 767px) {
+        &.slider-states {
+            .slick-slide {
+                &.slider-element { font-size: $font-size-regular; }
+            }    
+        }
+
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 540px; 
+
+                        .left-content {
+                            .wrapper-slide-title {
+                                width: fit-content;
+
+                                .slide-title { font-size: $font-size-h3; }
+                            }
+                        }
+
+                        .right-content {
+                            .slide-txt {
+                                &.slide-message {
+                                    font-size: $font-size-medium;
+                                    line-height: 30px;
+                                }
+
+                                &.slide-author {
+                                    font-size: $font-size-medium;
+                                    line-height: 30px;
+                                }
+
+                                &.slide-award { 
+                                    font-size: $font-size-small; 
+                                    line-height: 22px;
+                                }
+                            }
+                        }
+                    }
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 599px) {
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 480px; 
+                    }
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 520px) {
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 380px; 
+                    }
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 320px; 
+                    }
+                } 
+            }
+        }
+    }
+
+    @media (max-width: 409px) {
+        &.slider-testimonial {
+            .slick-slide {
+                &.slider-element {
+                    .card-container { 
+                        display: block;
+                        max-width: 280px; 
+                    }
+                } 
+            }
+        }
+    }
 }
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/

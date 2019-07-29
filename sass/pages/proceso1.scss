@@ -11,59 +11,84 @@
         }
 
         .container-main-txt {
-            margin-bottom: 60px;
+            margin: 30px 0;
 
             .heading {
                 &.main-txt { margin-bottom: 0; }
             }
         }
     
-        .wrapper-form {
-            .step-container { margin-bottom: 26px; }
-    
-            .info-contact-content {
-                .info-contact-txt {
-                    margin-bottom: 20px;
-                    font-family: $font-family-base-medium;
-                    font-size: $font-size-medium;
-                    color: #717171;
+        .wrapper-form {            
+            .background-form {
+                padding-top: 26px;
+                background-image: url(../img/bg-lines.png);
+                @include background-image(-93%, 78%);
+                
+                .info-contact-content {
+                    .info-contact-txt {
+                        margin-bottom: 20px;
+                        font-family: $font-family-base-medium;
+                        font-size: $font-size-medium;
+                        color: #717171;
+                    }
+                }
+                
+                .form-custom {
+                    &.form-process {
+                        .separator { margin: 20px 0; }
+                
+                        .wrapper-button { margin: 77px 0 47px; }
+                    }
                 }
             }
-            
-            .form-custom {
-                &.form-process {
-                    .separator { margin: 20px 0; }
-            
-                    .wrapper-button { margin: 77px 0 47px; }
+        }
+    }
+    
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/    
+    @media (max-width: 991px) {
+        &.process1 {
+            .container-main-title {
+                .heading {
+                    &.main-title { margin: 30px 0 15px; }
                 }
             }
+
+            .container-main-txt { margin: 30px 0; }
+
+            .wrapper-form  {
+                .background-form {
+                    .info-contact-content {
+                        .info-contact-txt { font-size: $font-size-regular; }
+                    }
+
+                    .form-custom {
+                        &.form-process {
+                            .wrapper-button { 
+                                justify-content: flex-start;
+                                margin: 30px 0; 
+                            }
+                        }
+                    }
+                }
+            }
+        }    
+    }
     
-            .separator {
-                &.end-page-separator { margin-bottom: 47px; }
+    @media (max-width: 767px) {
+        &.process1 {
+            .container-main-txt { margin: 30px 0; }
+
+            .wrapper-form {
+                .background-form { @include background-image(left, cover); }
             }
         }
     }
 }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/
-@media (max-width: 1199px) {
-}
-
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 479px) {
- 
-}
 
 
 

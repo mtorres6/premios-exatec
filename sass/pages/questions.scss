@@ -35,22 +35,9 @@
     Class: 		$media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
-    @media (max-width: 1199px) {
-    }
-
-    @media (max-width: 991px) {
-
-       
-    }
-
     @media (max-width: 767px) {
-
+        .block-txt { padding: 0 0 60px; }
     }
-
-    @media (max-width: 479px) {
-    
-    }
-
 }
 
 

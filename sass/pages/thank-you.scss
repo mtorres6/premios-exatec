@@ -1,0 +1,26 @@
+/******************************************************************************************
+    Name: questions
+    Description: Represent the styles for the page questions 
+******************************************************************************************/
+.thank-you { 
+    overflow-x: hidden;
+
+    .container-main-txt {
+        margin: 30px 0 0;
+    }
+
+    .wrapper-button { margin-bottom: 44px; }
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 767px) {
+        .wrapper-button {
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

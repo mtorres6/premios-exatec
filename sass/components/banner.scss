@@ -6,12 +6,6 @@
     position: relative;
     height: 368px;
 
-    /*&.first-banner {
-        position: relative;
-        background-image: url(../img/banner-princ.jpg);
-        background-size: cover;
-    }*/
-
     &.banner-simple{
         background-image: url(../img/10188.jpg);
         background-size: cover;
@@ -54,7 +48,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+            background-image: linear-gradient(0deg, #010D4D 0%, rgba(0, 0, 0, 0) 100%);
         }
     }
  
@@ -115,12 +109,14 @@
             margin: 0;
             top: 50%;
             left: 50%;
+            width: 100%;
             transform: translate(-50%, -50%);
 
             .banner-txt {
                 font-size: $font-size-large2;
                 font-weight: 700;
                 color: $clr-white;
+                text-align: center;
                 letter-spacing: 1.84px;
                 line-height: 41px;
             }
@@ -130,34 +126,45 @@
     &.banner-with-button {
         position: relative;
         height: 411px;
-        background-image: url(../img/img-banner-with-button.jpg);
-        @include background-image(center, cover);
-
+        background-image: url(../img/img-banner-button-filter.jpg);
+        @include background-image(0px -115px, cover);
+        
         .wrapper-button {
             position: absolute;
             margin: 0;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 1;
         }
     }
-
     /*****************************************************************************************/
     /******************************************************************************************
     Class: 		$media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 1199px) {
+        &.banner-simple {
+            .bg-title {
+                .title { font-size: $font-size-h2; }
+            }
+        }
+
+        &.banner-with-button { height: 300px; }
     }
 
     @media (max-width: 991px) {
-
         &.banner-simple{
             .bg-title{
+                top: 75%;
+                padding: 4px 0px 0px 40px;
+
                 .title{
                     font-size: $font-size-medium;
                 }
             }
+
+            .fig-scroll { bottom: 35px; }
         } 
 
         &.banner-with-txt{
@@ -170,15 +177,17 @@
         }
     }
 
-    @media (max-width: 767px) {
-        
+    @media (max-width: 767px) {   
         &.banner-simple{
-            padding: 15px 0px 12px 0px;
+            height: 240px;
             
             .bg-title{
+                top: 64%;
+                padding: 4px 0px 5px 27px;
                 max-width: 53%;
                 
                 .title{
+                    margin-bottom: 0;
                     font-size:$font-size-small3;
                 }
             }
@@ -193,17 +202,12 @@
                 line-height: 30px;
             }
         }
-
     }
 
     @media (max-width: 479px) {
-        
-
         &.banner-simple{
-            padding: 15px 0px 12px 0px;
-
             .bg-title{
-                padding: 15px 0px 7px 27px;
+                padding: 4px 0px 5px 27px;
                 max-width: 75%;
 
                 .title{
@@ -225,8 +229,4 @@
         }
     }
 }
-
-
-
-
 
