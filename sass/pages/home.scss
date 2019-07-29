@@ -3,10 +3,22 @@
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
 .home {
+    overflow-x: hidden;
+
+    .bg-lines {
+        position: relative;
+        z-index: 1;
+        padding-top: 20px;
+        background-image: url(../img/bg-lines.png);
+        @include background-image(-19% 550%, 49% 103%);
+    }
+
     .nominate-exatec {
-        margin-bottom: 60px;
+        margin-bottom: 45px;
 
         .first-banner{
+            padding-top: 0;
+
             .txt1,
             .txt2,
             .txt3,
@@ -19,26 +31,24 @@
             .box-txt{
                 padding: 30px;
             }
+
+            .icon-scroll {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 90px;
+                height: 90px;
+            }
         }
-        .img-banner{
-            width: 25%;
-            position: relative;
-            float: left;
+
+        .size-image {
+            display: block;
+            width: 100%;
+            height: 536px;
+            background-image: url(../img/banner-nominates.png);
+            @include background-image(100% 50%, 141% 530px);
         }
-        .img1{
-            position: relative;
-            left: 20%;
-            margin-top: -15px;
-        }
-        .img2{
-            position: relative;
-            left: 120px;
-        }
-        .img3{
-            position: relative;
-            left: 64px;
-            margin-top: -15px;
-        }
+
         .fa-chevron-right{
             float: right;
             margin-top: -33px;
@@ -306,55 +316,83 @@
         }
     }
 
-
-
-
-
     /*****************************************************************************************/
     /******************************************************************************************
     Class: $media queries
     Description:	CSS definition for responsive design
     ******************************************************************************************/
     @media (max-width: 1199px) {
-
-        .button-first-banner{
-            font-size: $font-size-medium;
+        .bg-lines {
+            @include background-image(-19% 1270%, 49% 103%);
         }
-        .first-banner .txt1, 
-        .first-banner .txt2, 
-        .first-banner .txt3, 
-        .first-banner .txt4{
-            font-size: $font-size-large4;
+
+        .nominate-exatec {
+            .button-first-banner{
+                font-size: $font-size-medium;
+            }
+
+            .first-banner {
+                .txt1, 
+                .txt2, 
+                .txt3, 
+                .txt4 {
+                    position: relative;
+                    font-size: $font-size-large4;
+                }
+
+                .txt1 { right: 25%; } 
+
+                .txt2 { left: 25%; }  
+
+                .txt3 { right: 38%; } 
+
+                .txt4 { left: 10%; } 
+            }
+
+            .size-image {
+                height: 360px;
+                @include background-image(100% 50%, 140% 360px);
+            }
+
+            .fa-chevron-right{ margin-top: -28px; }
         }
 
     }
 
     @media (max-width: 991px) {
+        .bg-lines {
+            @include background-image(0% 670px, 79% 63%);
+        }
 
         .nominate-exatec{
-            .fa-chevron-right{
-                margin-top: -24px;
+            .fa-chevron-right{ margin-top: -28px; }
+            
+            .first-banner {
+                .txt1, 
+                .txt2, 
+                .txt3, 
+                .txt4 {
+                    position: relative;
+                    font-size: $font-size-medium2;
+                }
+
+                .txt1 { right: 15%; } 
+
+                .txt2 { left: 15%; }  
+
+                .txt3 { right: 28%; } 
+
+                .txt4 { left: 8%; } 
             }
-            .first-banner .txt1, 
-            .first-banner .txt2, 
-            .first-banner .txt3, 
-            .first-banner .txt4{
-                font-size: $font-size-medium2;
-            }
-            .img1 {
-                left: 22%;
-            }
-            .img2 {
-                left: 90px;
-            }
-            .img3 {
-                left: 49px;
+
+            .size-image {
+                height: 450px;
+                @include background-image(100% 50%, 137% 450px);
             }
         }
 
         .awards-exatec{
             .box-txt{
-
                 .first-txt{
                     font-size: $font-size-medium;
                 }
@@ -362,16 +400,24 @@
             } 
         }
 
-        .distinctions {
+        .distinctions { 
+            padding: 60px 0 0px;
 
             .block-title{
+                margin-top: 140px;
 
                 .txt{
                     font-size: $font-size-medium2;
                 }
             }
 
+            .img1 { 
+                margin-top: 178px; 
+                height: 380px;
+            }
+
             .box-text{
+                margin-top: -230px;
 
                 .text{
                     font-size: $font-size-h3;
@@ -380,14 +426,14 @@
             }
 
             .block-two{
-
                 .block-title{
-
                     .txt{
                         font-size: $font-size-h3;
                     }
                 }
-
+                
+                .box-text2 { padding: 70px 45px 40px; }
+                
                 .text2{
                     font-size: $font-size-h3;
                     line-height: 35px;
@@ -395,20 +441,39 @@
 
             } 
         }
+
         .button-first-banner{
             font-size: $font-size-small4;
         }
          
-
+        .campus-participants {
+            margin: 30px 0 60px;
+        }
     }
 
     @media (max-width: 767px) {
+        .nominate-exatec {
+            margin-bottom: 25px;
 
-        .button-first-banner{
-            max-width: 67%;
+            .size-image {
+                height: 380px;
+                @include background-image(100% 50%, 137% 380px);
+            }
+            
+            .button-first-banner {
+                max-width: 280px;
+                font-size: $font-size-small;
+                padding: 4px 0;
+            }
+
+            .fa-chevron-right{ margin-top: -25px; }
+
+            .icon-scroll { display: none; }
         }
+        
 
         .awards-exatec{
+            padding: 0px 0 30px;
 
             .box-txt{
                 margin-top: 0;
@@ -418,7 +483,7 @@
         }
 
         .distinctions{
-            padding: 60px 0 120px;
+            padding: 60px 0 30px;
 
             .padd-right{
                 padding-right: 15px;
@@ -461,6 +526,7 @@
             }
 
             .block-two{
+                .text-win { font-size: $font-size-regular; }
 
                 .sin-padd{
                     padding-right: 15px;
@@ -492,25 +558,23 @@
                 }
             }
         }
+
+        .campus-participants { margin: 30px 0 60px; }
     }
 
     @media (max-width: 479px) {
-
-        .button-first-banner {
-            max-width: 85%;
-            font-size: $font-size-small;
-            padding: 11px;
-        }
-
         .nominate-exatec {
+            .size-image {
+                height: 220px;
+                @include background-image(100% 50%, 137% 220px);
+            }
+
             .fa-chevron-right{
                 margin-top: -26px;
             }
         }
         
-        .awards-exatec {
-            padding: 0px 0 50px;
-            
+        .awards-exatec {            
             .box-txt {
                 background-color: #F9F9F9;
                 padding: 65px 115px 65px 90px;
@@ -521,7 +585,7 @@
         }
 
         .distinctions{
-            padding: 60px 0 120px;
+            padding: 60px 0 60px;
 
             .padd-right{
                 padding-right: 15px;

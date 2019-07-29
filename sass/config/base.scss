@@ -310,6 +310,7 @@ a:hover { text-decoration: none !important; }
 
 .hidden-sm-up { display: inline-block; }
 
+.visible-desktop { visibility: visible; }
 /*****************************************************************************************/
 /******************************************************************************************
  Class: 		$media queries
@@ -345,6 +346,8 @@ a:hover { text-decoration: none !important; }
         width: 60px;
         height: 60px;
     }
+
+    .visible-desktop { visibility: hidden; }
 }
 
 @media (max-width: 767px) {
@@ -358,6 +361,10 @@ a:hover { text-decoration: none !important; }
             font-size: $font-size-regular; 
             
             &.button-banner { background-color: transparent; }
+        }
+
+        &.button-first-banner {
+            .title { line-height: 30px; }
         }
     }
 

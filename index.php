@@ -1,67 +1,58 @@
 <?php include('header.php'); ?>
     <div class="home">
-        <div class="nominate-exatec">
-            <div class="banner first-banner">
-                <div class="container-fluid">
-                    <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
-                        <img class="img-fluid" src="img/banner-princ.jpg" alt="">
-                    </div>
-                    <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
-                        <img class="img-fluid" src="img/banner-movil.jpg" alt="">
-                    </div>
-                    <!--div class="row">
-                        <div class="col-12 col-lg-3 offset-lg-1">
-                            <div class="box-txt">
-                                <p class="txt1">Identifica,</p>
-                                <p class="txt2">visualiza,</p>
-                                <p class="txt3">reconoce</p>
-                                <p class="txt4">y celebra</p>
+        <div class="bg-lines">
+            <div class="nominate-exatec">
+                <div class="banner first-banner">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 offset-lg-1">
+                                <div class="box-txt">
+                                    <p class="txt1">Identifica<span class="visible-desktop">,</span></p>
+                                    <p class="txt2">visualiza<span class="visible-desktop">,</span></p>
+                                    <p class="txt3">reconoce</p>
+                                    <p class="txt4">y celebra</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-12">
+                                <div class="size-image"></div>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-12">
-                            <div class="size-image">
-                                <img class="img-banner img1" src="img/CEO.png" alt="">
-                                <img class="img-banner img2" src="img/Doctora.png" alt="">
-                                <img class="img-banner img3" src="img/Bastekball.png" alt="">
-                                <img class="img-banner img4" src="img/Arquitecta.png" alt="">
-                            </div>
-                        </div>
-                    </div-->
-                </div>
-                <a href="#">
-                    <div class="button-first-banner button-general">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-12 col-sm-9 offset-sm-2">
-                                    <p class="title">Nomina a un EXATEC</p>
-                                    <hr class="line">
-                                    <i class="fas fa-chevron-right"></i>
+                    </div>
+                    <a href="#">
+                        <div class="button-first-banner button-general">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xl-9 col-lg-9 col-sm-12 col-sm-12 col-12 offset-xl-2 offset-lg-2 offset-sm-0">
+                                        <p class="title">Nomina a un EXATEC</p>
+                                        <hr class="line">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="d-none d-sm-block d-md-block d-lg-block d-xl-block">
                         <img class="icon-scroll" src="img/Icon-Scroll.svg" alt="">
                     </div>
-                </a>
+                </div>
             </div>
-        </div>
-    
-        <div class="awards-exatec">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 col-lg-4 offset-lg-1 col-sm-4 offset-sm-1">
-                        <img class="bg-img img-fluid" src="img/awards-EXATEC2.jpg" alt="Premios">
-                    </div>
-                    <div class="col-12 col-lg-6 col-sm-6">
-                        <div class="box-txt">
-                            <p class="first-title">Premios EXATEC</p>
-                            <hr class="line1">
-                            <p class="first-txt">El Tecnológico de Monterrey busca reconocer y vincular a los egresados
-                                con la Institución, despertando en ellos y en la comunidad Tec el sentido de orgullo, 
-                                pertenencia y amor hacia su alma máter, reconociendo y visibilizando el mérito y trayectorias
-                                extraordinarias de EXATEC.  
-                            </p>
+        
+            <div class="awards-exatec">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-4 offset-lg-1 col-sm-4 offset-sm-1">
+                            <img class="bg-img img-fluid" src="img/awards-EXATEC2.jpg" alt="Premios">
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-6">
+                            <div class="box-txt">
+                                <p class="first-title">Premios EXATEC</p>
+                                <hr class="line1">
+                                <p class="first-txt">El Tecnológico de Monterrey busca reconocer y vincular a los egresados
+                                    con la Institución, despertando en ellos y en la comunidad Tec el sentido de orgullo, 
+                                    pertenencia y amor hacia su alma máter, reconociendo y visibilizando el mérito y trayectorias
+                                    extraordinarias de EXATEC.  
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,7 +68,7 @@
         <div class="distinctions">
             <div class="container-fluid padd-right">
                 <div class="row">
-                    <div class="col-6 offset-3">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8 offset-xl-3 offset-lg-3 offset-md-3 offset-sm-3 offset-2">
                         <div class="box-title">
                             <p class="txt1">Distinciones</p>
                             <hr class="line3">

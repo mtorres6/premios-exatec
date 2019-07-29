@@ -25,11 +25,11 @@
 								<input type="text" id="input1" name="input1" class="input-custom" placeholder="Matrícula..."/>
 							</div>
 						</div>
-						<!--<div class="col-lg-5 col-sm-5 ">
+						<div class="col-lg-5 col-sm-5 ">
 							<div class="wrapper-input">
 								<input type="text" id="input2" name="input2" class="input-custom" placeholder="Email..."/>
 							</div>
-						</div>-->
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-5 offset-lg-5 col-sm-5 offset-sm-5">
@@ -42,13 +42,13 @@
 		
 		<div class="copy">
 			<div class="row">
-				<div class="col-12 col-lg-7 col-sm-8">
+				<div class="col-12 col-lg-7 col-sm-7">
 					<h2>© Instituto Tecnológico y de Estudios Superiores de Monterrey, México. 2018 | <a class="font-color" target="_blank" href="https://tec.mx/es/aviso-de-privacidad-exalumnos">Aviso de Privacidad</a></h2>
 				</div>
-				<div class="col-12 col-lg-3 offset-lg-2 col-sm-2 offset-sm-1">
+				<div class="col-12 col-lg-3 col-sm-4 offset-lg-2 col-sm-2 offset-sm-1">
 					<div class="social-media">
-						<a href="#">
-							<i class="fab fa-facebook-square"></i>
+					<a href="#">
+							<img class="icon-social" src="img/icon-fb.png" alt="">
 						</a>
 						<a href="#">
 							<img class="icon-social" src="img/unnamed(1).png" alt="">
