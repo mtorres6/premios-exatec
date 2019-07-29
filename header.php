@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -24,48 +25,94 @@
   <![endif]-->
 
   <header class="header">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-2 offset-1">
+          <div class="col-lg-2 offset-lg-1 col-sm-12">
             <div class="logo">
-                <a href="#" title='Premios Exatec'><span>Logo</span></a>
+                <a class="logo-a" href="#" title='Premios Exatec'><span class="logo-s">Logo</span></a>
             </div>
           </div>
-          <div class="col-8"> 
-          <div class="menu">
-              <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light">
-                          
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+          <div class="col-lg-8 offset-lg-1 col-sm-12"> 
+            <div class="menu">
+              <nav class="navbar navbar-expand-lg navbar-light justify-content-sm-start">
+                  <a class="navbar-brand hidden order-1 order-lg-0 ml-lg-0 ml-2 mr-auto" href="">Brand</a>
+                  <button class="navbar-toggler align-self-start" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar size-line"></span>
+                    <span class="icon-bar"></span>
                   </button>
-
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      <ul class="navbar-nav">
+            
+                  <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justifity-content-lg-end p-3 p-lg-0 mt-lg-0 mobileMenu" id="navbarSupportedContent">
+                    <div class="d-block d-lg-none d-xl-none">
+                      <i class="fas fa-times"></i>
+                      <div class="logo" id="logo-movil"></div>
+                    </div>    
+                      <ul class="navbar-nav align-self-stretch">
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Premios Exatec</a>
+                              <a class="nav-link" id="txt-menu" href="#">Premios Exatec</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">¿A quién nominar?</a>
+                              <a class="nav-link" id="txt-menu" href="#">¿A quién nominar?</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Galería de ganadores</a>
+                              <a class="nav-link" id="txt-menu" href="#">Galería de ganadores</a>
                           </li>
                       
                           <li class="nav-item">
-                              <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                              <a class="nav-link" id="txt-menu" href="#">Preguntas Frecuentes</a>
                           </li>
 
                           <li class="nav-item">
-                              <a class="nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
+                              <a id="txt-menu" class="btn-none-movil nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
                           </li>                                    
                       </ul>
                   </div>
-              </nav>
+                </nav>
+                <div class="overlay"></div>
+              <!--nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand hidden" href="">Brand</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar size-line"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" id="txt-menu" href="#">Premios Exatec</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="txt-menu" href="#">¿A quién nominar?</a>
+                    </li> 
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="txt-menu" href="#">Galería de ganadores</a>
+                    </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link" id="txt-menu" href="#">Preguntas Frecuentes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a id="txt-menu" class="btn-none-movil nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
+                    </li>     
+                  </ul>
+                </div>
+              </nav-->
+              <div class="btn-movil d-block d-lg-none d-xl-none">
+                <a id="txt-menu" class="nav-link button-general button-primary button-menu-header" href="#">Nomina a un Exatec</a>
+              </div>
             </div>
           </div>
         </div>
     </div>
+
+
+
   </header>
+
+  

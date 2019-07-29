@@ -1,0 +1,86 @@
+/******************************************************************************************
+    Name: proceso1
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.process { 
+    &.process3 {
+        .container-main-txt {
+            margin: 30px 0 60px;
+
+            .heading {
+                &.main-txt { margin-bottom: 0; }
+            }
+        }
+
+        .wrapper-form {            
+            .background-form {
+                padding-top: 26px;
+                background-image: url(../img/bg-lines.png);
+                @include background-image(-85%, 82%);
+
+                .info-contact-content {
+                    .info-contact-txt {
+                        margin-bottom: 20px;
+                        font-family: $font-family-base-medium;
+                        font-size: $font-size-medium;
+                        color: #717171;
+                    }
+                }
+                
+                .form-custom {
+                    &.form-process {
+                    
+                
+                        .wrapper-input { 
+                            &.wrapper-file { margin-bottom: 37px; }
+                        }
+
+                        .wrapper-button { margin: 24px 0; }
+                    }
+                }
+        
+                .separator {
+                    &.end-page-separator { margin-bottom: 47px; }
+                }
+            }
+        }
+        
+        /*****************************************************************************************/
+        /******************************************************************************************
+        Class: 		$media queries
+        Description:	CSS definition for responsive design
+        ******************************************************************************************/
+        @media (max-width: 991px) {
+            .container-main-txt { margin: 30px 0; }
+
+            .wrapper-form {
+                .background-form { 
+                    @include background-image(215%, 109%); 
+                    
+                    .form-custom {
+                        &.form-process {
+                            .personal-info-fields {
+                                margin: 20px 0 15px;
+
+                                .wrapper-input { 
+                                    margin-bottom: 20px; 
+                                }
+                            }
+                            
+                            .wrapper-button { 
+                                justify-content: flex-start;
+                                margin: 30px 0; 
+                            }
+                        } 
+                    }
+                }
+            } 
+        }
+
+        @media (max-width: 767px) {
+            .wrapper-form {
+                .background-form { @include background-image(25%, cover); }
+            }
+        }
+    } 
+}

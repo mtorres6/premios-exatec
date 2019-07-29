@@ -1,0 +1,47 @@
+/******************************************************************************************
+    Name: tips
+    Description: Represent the basics styles for main layout and body element 
+******************************************************************************************/
+.wrapper-tip {
+    max-width: 160px;
+
+    .icon-tip {
+        width: 100%;
+        height: 60px;
+        @include background-image(left, contain);
+
+        &.icon-research { background-image: url(../img/icons/icon-tip-research.svg); }
+
+        &.icon-planning { background-image: url(../img/icons/icon-tip-planning.svg); }
+
+        &.icon-describe { background-image: url(../img/icons/icon-tip-describe.svg); }
+
+        &.icon-complete { background-image: url(../img/icons/icon-tip-complete.svg); }
+
+        &.icon-confirm { background-image: url(../img/icons/icon-tip-confirm.svg); }
+    }
+
+    .tip-text {
+        font-family: $font-family-base-semiBold;
+
+        &.tip-title {
+            margin: 15px 0 5px;
+            font-size: $font-size-medium3;
+        }
+
+        &.tip-message {
+            margin-top: 20px;
+            font-size: $font-size-small;
+            line-height: 20px;
+        }
+    }
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: 		$media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 767px) {
+        max-width: 100%; 
+    }
+}

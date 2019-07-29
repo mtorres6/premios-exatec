@@ -2,27 +2,666 @@
     Name: home
     Description: Represent the basics styles for main layout and body element 
 ******************************************************************************************/
+.home {
+    overflow-x: hidden;
 
+    .bg-lines {
+        position: relative;
+        z-index: 1;
+        padding-top: 20px;
+        background-image: url(../img/bg-lines.png);
+        @include background-image(-19% 550%, 49% 103%);
+    }
 
-/*****************************************************************************************/
-/******************************************************************************************
-Class: 		$media queries
-Description:	CSS definition for responsive design
-******************************************************************************************/
-@media (max-width: 1199px) {
+    .nominate-exatec {
+        margin-bottom: 45px;
+
+        .first-banner{
+            padding-top: 0;
+
+            .txt1,
+            .txt2,
+            .txt3,
+            .txt4{
+                font-family: $font-family-base-bold;
+                font-size: $font-size-slide-title;
+                text-align:center;
+                margin-bottom: 5px;
+            }
+            .box-txt{
+                padding: 30px;
+            }
+
+            .icon-scroll {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .size-image {
+            display: block;
+            width: 100%;
+            height: 536px;
+            background-image: url(../img/banner-nominates.png);
+            @include background-image(100% 50%, 141% 530px);
+        }
+
+        .fa-chevron-right{
+            float: right;
+            margin-top: -33px;
+        }
+
+        .icon-scroll{
+            position: absolute;
+            float: right;
+            right: 0;
+            width: 4%;
+            bottom: 0;
+        }
+    }
+
+    .awards-exatec {
+        padding: 70px 0;
+        z-index: -1;
+        position: relative;
+
+        .bg-img{
+            z-index: 1;
+            position: relative;
+        }
+
+        .box-txt{
+            background-color: $clr-gray6;
+            padding: 65px 115px 65px 90px;
+            margin-top: 150px;
+            margin-left: -80px;
+
+            .first-title{
+                color: $clr-black;
+                font-family: $font-family-base-bold;
+                font-size: $font-size-large;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .line1{
+                border-top: 2px solid $clr-black;
+                width: 10%;
+                margin-top: 4px;
+                margin-bottom: 30px;
+            }
+            .first-txt{
+                color: $clr-black;
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-medium2;
+                text-align: left;
+            }
+        }
+    }
+
+    .distinctions {
+        overflow: hidden;
+        padding: 60px 0 170px;
+
+        .padd-right{
+            padding-right: 0;
+        }
+
+        .box-title{
+            background-color: $clr-gray6;
+            padding: 50px 0 110px;
+            height: 1530px;
+            position: absolute;
+            width: 100%;
+
+            .txt1{
+                text-align: center;
+                font-family: $font-family-base-bold;
+                font-size: $font-size-large;
+                color: $clr-black;
+            }
+
+            .line3{
+                border-top: 2px solid $clr-black;
+                width: 10%;
+                margin: -10px auto 10px;
+            }
+        }
+
+        .block-title{
+            background-color: $clr-black;
+            padding: 33px;
+            margin-top: 38%;
+
+            .txt{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large5;
+                font-weight: 500;
+                letter-spacing: 1.32px;
+                line-height: 46px;
+                text-align: center;
+                color: $clr-white;
+                margin-bottom: 0;
+            }
+        }
+
+        .img1{
+            height: 571px;
+            margin-left: -30px;
+            margin-top: 27%;
+        }
+
+        .box-text{
+            background-color: $clr-white;
+            padding: 50px 110px;
+            margin-top: -53%;
+
+            .text{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large4;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+                line-height: 46px;
+                text-align: left;
+                color: $clr-black;
+            }
+        }
+
+        .block-two {
+
+            .sin-padd{
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            .img2{
+                background-color: $clr-red;
+                margin-top: -40px;
+                z-index: 1;
+                position: relative;
+            }
+
+            .box-text2{
+                background-color: $clr-white;
+                padding: 70px 45px 90px;
+                margin-left: -50px;
+                margin-top: -93px;
+            }
+
+            .text2{
+                font-family: $font-family-base-medium;
+                font-size: $font-size-large4;
+                font-weight: 500;
+                letter-spacing: 1.2px;
+                line-height: 46px;
+                text-align: left;
+                color: $clr-black;
+            }
+
+            .text-win{
+                font-family: $font-family-base-semiBold;
+                font-size: $font-size-h2;
+                font-weight: 600;
+                line-height: 37px;
+                color: $clr-blue;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            .line-win{
+                border-top: 2px solid $clr-blue;
+                width: 10%;
+                margin: 5px;
+            }
+
+            .fa-chevron-right{
+                color: $clr-blue;
+                text-align: right;
+                float: right;
+                margin-top: -35px;
+            }
+
+            .block-title{
+                background-color: $clr-black;
+                padding: 33px;
+                margin-top: -19px;
+                z-index: 999;
+                position: relative;
+    
+                .txt{
+                    font-family: $font-family-base-medium;
+                    font-size: $font-size-large5;
+                    font-weight: 500;
+                    letter-spacing: 1.32px;
+                    line-height: 46px;
+                    text-align: center;
+                    color: $clr-white;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }   
+    
+    .campus-participants {
+        margin: 0 0 140px;
+
+        .container-main-title {
+            margin-bottom: 45px; 
+
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+    }
+
+    .testimonial {
+        padding-bottom: 72px;
+        background-color: $clr-gray6;
+
+        .container-main-title { 
+            padding: 50px 0; 
+        
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+    }
+
+    .tips {
+        padding: 30px 0;
+        background-image: url(../img/bg-lines.png);
+        @include background-image(-93%, 78%);
+        
+        .container-main-title {
+            margin-bottom: 75px; 
+
+            .heading {
+                &.main-title {
+                    text-align: center;
+                }
+
+                .separator {
+                    &.small { margin: 10px auto 0; }
+                }
+            }
+        }
+
+        .wrapper-tip {
+            .separator {
+                &.extra-small { margin: 0; }
+            }
+        }
+    }
+
+    .banner {
+        &.banner-with-button {  
+            background-image: url(../img/img-banner-button-filter.jpg);
+            background-size: cover;
+            background-position: 0px -115px;
+        }
+    }
+
+    /*****************************************************************************************/
+    /******************************************************************************************
+    Class: $media queries
+    Description:	CSS definition for responsive design
+    ******************************************************************************************/
+    @media (max-width: 1199px) {
+        .bg-lines {
+            @include background-image(-19% 1270%, 49% 103%);
+        }
+
+        .nominate-exatec {
+            .button-first-banner{
+                font-size: $font-size-medium;
+            }
+
+            .first-banner {
+                .txt1, 
+                .txt2, 
+                .txt3, 
+                .txt4 {
+                    position: relative;
+                    font-size: $font-size-large4;
+                }
+
+                .txt1 { right: 25%; } 
+
+                .txt2 { left: 25%; }  
+
+                .txt3 { right: 38%; } 
+
+                .txt4 { left: 10%; } 
+            }
+
+            .size-image {
+                height: 360px;
+                @include background-image(100% 50%, 140% 360px);
+            }
+
+            .fa-chevron-right{ margin-top: -28px; }
+        }
+
+    }
+
+    @media (max-width: 991px) {
+        .bg-lines {
+            @include background-image(0% 670px, 79% 63%);
+        }
+
+        .nominate-exatec{
+            .fa-chevron-right{ margin-top: -28px; }
+            
+            .first-banner {
+                .txt1, 
+                .txt2, 
+                .txt3, 
+                .txt4 {
+                    position: relative;
+                    font-size: $font-size-medium2;
+                }
+
+                .txt1 { right: 15%; } 
+
+                .txt2 { left: 15%; }  
+
+                .txt3 { right: 28%; } 
+
+                .txt4 { left: 8%; } 
+            }
+
+            .size-image {
+                height: 450px;
+                @include background-image(100% 50%, 137% 450px);
+            }
+        }
+
+        .awards-exatec{
+            .box-txt{
+                .first-txt{
+                    font-size: $font-size-medium;
+                }
+
+            } 
+        }
+
+        .distinctions { 
+            padding: 60px 0 0px;
+
+            .block-title{
+                margin-top: 140px;
+
+                .txt{
+                    font-size: $font-size-medium2;
+                }
+            }
+
+            .img1 { 
+                margin-top: 178px; 
+                height: 380px;
+            }
+
+            .box-text{
+                margin-top: -230px;
+
+                .text{
+                    font-size: $font-size-h3;
+                    line-height: 35px;
+                }
+            }
+
+            .block-two{
+                .block-title{
+                    .txt{
+                        font-size: $font-size-h3;
+                    }
+                }
+                
+                .box-text2 { padding: 70px 45px 40px; }
+                
+                .text2{
+                    font-size: $font-size-h3;
+                    line-height: 35px;
+                }
+
+            } 
+        }
+
+        .button-first-banner{
+            font-size: $font-size-small4;
+        }
+         
+        .campus-participants {
+            margin: 30px 0 60px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .nominate-exatec {
+            margin-bottom: 25px;
+
+            .size-image {
+                height: 380px;
+                @include background-image(100% 50%, 137% 380px);
+            }
+            
+            .button-first-banner {
+                max-width: 280px;
+                font-size: $font-size-small;
+                padding: 4px 0;
+            }
+
+            .fa-chevron-right{ margin-top: -25px; }
+
+            .icon-scroll { display: none; }
+        }
+        
+
+        .awards-exatec{
+            padding: 0px 0 30px;
+
+            .box-txt{
+                margin-top: 0;
+                margin-left: -46px;
+                padding: 27px 27px 27px 47px;
+            }
+        }
+
+        .distinctions{
+            padding: 60px 0 30px;
+
+            .padd-right{
+                padding-right: 15px;
+            }
+
+            .box-title{
+                padding: 27px 0 110px;
+                height: 1210px;
+
+                .txt1{
+                    font-size: $font-size-h3;
+                }
+            }
+
+            .block-title{
+                padding: 0px;
+                margin-top: 28%;
+                z-index: 999;
+                position: relative;
+
+                .txt{
+                    font-size: $font-size-regular;
+                }
+            }
+
+            .img1{
+                margin-left: 0;
+                margin-top: -18px;
+                height: auto;
+            }
+
+            .box-text{
+                padding: 7px;
+                margin-top: -150px;
+
+                .text{
+                    font-size: $font-size-regular;
+                    line-height: 25px;
+                }
+            }
+
+            .block-two{
+                .text-win { font-size: $font-size-regular; }
+
+                .sin-padd{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .img2{
+                    margin-top: -15px;
+                }
+
+                .block-title{
+                    padding: 0;
+                    margin-top: 15px;
+
+                    .txt{
+                        font-size:$font-size-regular;
+                    }
+                }
+
+                .box-text2{
+                    padding: 10px;
+                    margin-left: -40px;
+                    margin-top: 0;
+
+                    .text2{
+                        font-size: $font-size-regular;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+
+        .campus-participants { margin: 30px 0 60px; }
+    }
+
+    @media (max-width: 479px) {
+        .nominate-exatec {
+            .size-image {
+                height: 220px;
+                @include background-image(100% 50%, 137% 220px);
+            }
+
+            .fa-chevron-right{
+                margin-top: -26px;
+            }
+        }
+        
+        .awards-exatec {            
+            .box-txt {
+                background-color: #F9F9F9;
+                padding: 65px 115px 65px 90px;
+                margin-top: 0;
+                margin-left: 0;
+                padding: 7px;
+            }
+        }
+
+        .distinctions{
+            padding: 60px 0 60px;
+
+            .padd-right{
+                padding-right: 15px;
+            }
+
+            .box-title{
+                padding: 27px 0 110px;
+                height: 1210px;
+
+                .txt1{
+                    font-size: $font-size-h3;
+                }
+            }
+
+            .block-title{
+                padding: 0px;
+                margin-top: 58%;
+                z-index: 999;
+                position: relative;
+
+                .txt{
+                    font-size: $font-size-regular;
+                }
+            }
+
+            .img1{
+                margin-left: 0;
+                margin-top: -18px;
+                height: auto;
+            }
+
+            .box-text{
+                padding: 7px;
+                margin-top: 0;
+
+                .text{
+                    font-size: $font-size-regular;
+                    line-height: 25px;
+                }
+            }
+
+            .block-two{
+
+                .sin-padd{
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+
+                .img2{
+                    margin-top: -15px;
+                }
+
+                .block-title{
+                    padding: 0;
+                    margin-top: 15px;
+
+                    .txt{
+                        font-size:$font-size-regular;
+                    }
+                }
+
+                .box-text2{
+                    padding: 10px;
+                    margin-left: 0;
+                    margin-top: 0;
+
+                    .text2{
+                        font-size: $font-size-regular;
+                        line-height: 25px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media (max-width: 991px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 479px) {
- 
-}
 
 
 
