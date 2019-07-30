@@ -17,7 +17,6 @@
 				</ul>
 			</div>
 			<div class="col-12 col-lg-5 col-sm-5">
-				<h1>Conéctate con tu alma máter</h1>
 				<div class="social-media">
 					<a href="#">
 						<img class="icon-social" src="img/icon-fb.png" alt="">
