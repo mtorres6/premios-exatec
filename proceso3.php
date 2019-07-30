@@ -68,7 +68,7 @@
                         <div class="row">
                             <div class="col-xl-5 col-lg-8 offset-xl-6 offset-lg-4">
                                 <div class="wrapper-button">
-                                    <a class="button-general button-primary button-form-process" href="#">
+                                    <a class="button-general button-primary button-form-process" href="gracias.php">
                                         Siguiente paso 
                                         <i class="fas fa-chevron-right button-icon"></i>
                                     </a>
