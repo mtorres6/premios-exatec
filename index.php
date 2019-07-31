@@ -45,7 +45,7 @@
                         </div>
                         <div class="col-12 col-lg-6 col-sm-6">
                             <div class="box-txt">
-                                <p class="first-title">Premios EXATEC</p>
+                                <p id="link-premios" class="first-title">Premios EXATEC</p>
                                 <hr class="line1">
                                 <p class="first-txt">El Tecnológico de Monterrey busca reconocer y vincular a los egresados
                                     con la Institución, despertando en ellos y en la comunidad Tec el sentido de orgullo, 
@@ -70,7 +70,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-8 offset-xl-3 offset-lg-3 offset-md-3 offset-sm-3 offset-2">
                         <div class="box-title">
-                            <p class="txt1">Distinciones</p>
+                            <p id='link-nominarias' class="txt1">Distinciones</p>
                             <hr class="line3">
                         </div>
                     </div>
@@ -113,7 +113,7 @@
                                 <div class="row">
                                     <div class="col-10 offset-2">
                                         <a href="#">
-                                            <p class="text-win">Ver ganadores</p>
+                                            <p id="link-ganadores" class="text-win">Ver ganadores</p>
                                             <hr class="line-win">
                                             <i class="fas fa-chevron-right"></i>
                                         </a>
@@ -155,103 +155,9 @@
                 </div>
             </div>
         </div>
-    
-        <div class="testimonial">
-            <div class="container-main-title">
-                <h2 class="heading heading-01 main-title">
-                    Algunos testimonios
-                    <hr class="separator small">
-                </h2>
-            </div>
-
-            <div class="slider slider-testimonial">
-                <div class="slider-element">        
-                    <div class="card-container">
-                        <div class="left-content">
-                            <div class="wrapper-slide-title">
-                                <p class="slide-title">ISC’91</p>
-                            </div>
-                        </div>
-                        <div class="right-content">
-                            <p class="slide-txt slide-message">
-                                En el Tec aprendí lo que es trabajar sin descanso y en equipo, a hacer las cosas completas bien y de preferencia a la primera, a sobreponerme a mis errores a tenerle amor a la camiseta a disfrutar del conocimiento, a emprender, innovar y creer en mis ideas, y a ser honesto y unido.
-                            </p>
-                            <p class="slide-txt slide-author">Carlos Gutiérrez Cerdio</p>
-                            <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chiapas 2017.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-element">        
-                    <div class="card-container">
-                        <div class="left-content">
-                            <div class="wrapper-slide-title">
-                                <p class="slide-title">ISC’91</p>
-                            </div>
-                        </div>
-                        <div class="right-content">
-                            <p class="slide-txt slide-message">
-                                En el Tec aprendí lo que es trabajar sin descanso y en equipo, a hacer las cosas completas bien y de preferencia a la primera, a sobreponerme a mis errores a tenerle amor a la camiseta a disfrutar del conocimiento, a emprender, innovar y creer en mis ideas, y a ser honesto y unido.
-                            </p>
-                            <p class="slide-txt slide-author">Carlos Gutiérrez Cerdio</p>
-                            <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chiapas 2017.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-element">        
-                    <div class="card-container">
-                        <div class="left-content">
-                            <div class="wrapper-slide-title">
-                                <p class="slide-title">ISC’91</p>
-                            </div>
-                        </div>
-                        <div class="right-content">
-                            <p class="slide-txt slide-message">
-                                En el Tec aprendí lo que es trabajar sin descanso y en equipo, a hacer las cosas completas bien y de preferencia a la primera, a sobreponerme a mis errores a tenerle amor a la camiseta a disfrutar del conocimiento, a emprender, innovar y creer en mis ideas, y a ser honesto y unido.
-                            </p>
-                            <p class="slide-txt slide-author">Carlos Gutiérrez Cerdio</p>
-                            <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chiapas 2017.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-element">        
-                    <div class="card-container">
-                        <div class="left-content">
-                            <div class="wrapper-slide-title">
-                                <p class="slide-title">ISC’91</p>
-                            </div>
-                        </div>
-                        <div class="right-content">
-                            <p class="slide-txt slide-message">
-                                En el Tec aprendí lo que es trabajar sin descanso y en equipo, a hacer las cosas completas bien y de preferencia a la primera, a sobreponerme a mis errores a tenerle amor a la camiseta a disfrutar del conocimiento, a emprender, innovar y creer en mis ideas, y a ser honesto y unido.
-                            </p>
-                            <p class="slide-txt slide-author">Carlos Gutiérrez Cerdio</p>
-                            <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chiapas 2017.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slider-element">        
-                    <div class="card-container">
-                        <div class="left-content">
-                            <div class="wrapper-slide-title">
-                                <p class="slide-title">ISC’91</p>
-                            </div>
-                        </div>
-                        <div class="right-content">
-                            <p class="slide-txt slide-message">
-                                En el Tec aprendí lo que es trabajar sin descanso y en equipo, a hacer las cosas completas bien y de preferencia a la primera, a sobreponerme a mis errores a tenerle amor a la camiseta a disfrutar del conocimiento, a emprender, innovar y creer en mis ideas, y a ser honesto y unido.
-                            </p>
-                            <p class="slide-txt slide-author">Carlos Gutiérrez Cerdio</p>
-                            <p class="slide-txt slide-award">Ganador Premio al Mérito EXATEC Campus Chiapas 2017.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
+<!-- INICIO TESTIMONIALES -->
+<?php include 'testimonios.php'; ?>
+<!-- FIN TESTIMONIALES -->
         <div class="tips">
             <div class="container-main-title">
                 <h2 class="heading heading-01 main-title">
