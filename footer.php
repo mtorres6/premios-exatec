@@ -17,26 +17,20 @@
 				</ul>
 			</div>
 			<div class="col-12 col-lg-5 col-sm-5">
-				<h1>Conéctate con tu alma máter</h1>
-				<form action="SendEmailInForm.php" method="POST" class="form-custom form-footer"> 
-					<div class="row">
-						<div class="col-lg-5 col-sm-5">
-							<div class="wrapper-input">
-								<input type="text" id="input1" name="input1" class="input-custom" placeholder="Matrícula..."/>
-							</div>
-						</div>
-						<div class="col-lg-5 col-sm-5 ">
-							<div class="wrapper-input">
-								<input type="text" id="input2" name="input2" class="input-custom" placeholder="Email..."/>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-lg-5 offset-lg-5 col-sm-5 offset-sm-5">
-							<button type="submit" name="submit" value="Send" id="buttonSendContact" class="btn-default2 btn-md button-general button-primary button-menu-footer">Enviar</button>
-						</div>
-					</div>                      
-				</form>
+				<div class="social-media">
+					<a href="#">
+						<img class="icon-social" src="img/icon-fb.png" alt="">
+					</a>
+					<a href="#">
+						<img class="icon-social" src="img/unnamed(1).png" alt="">
+					</a>
+					<a href="#">							
+						<img class="icon-social" src="img/unnamed(2).png" alt="">
+					</a>
+					<a href="#">
+						<img class="icon-social" src="img/unnamed(3).png" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 		

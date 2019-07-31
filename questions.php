@@ -76,7 +76,7 @@
                     <div class="col-12 col-sm-6 offset-sm-3">
                         <h2 class="title1">¿Resolvimos tu duda?</h2>
                         <h3 class="title2">Escribe un correo a la siguiente dirección y nosotros te contactaremos.</h3>
-                        <p class="title3">premios.exatec.@tec.mx</p>
+                        <p class="title3">premios.EXATEC@servicios.itesm.mx</p>
                     </div>
                 </div>
             </div>

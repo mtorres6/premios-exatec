@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="wrapper-button">
-                            <a class="button-general button-primary button-form-process" href="#">
+                            <a class="button-general button-primary button-form-process" href="proceso2.php">
                                 Siguiente paso 
                                 <i class="fas fa-chevron-right button-icon"></i>
                             </a>

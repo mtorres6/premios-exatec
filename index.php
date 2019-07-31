@@ -224,7 +224,7 @@
     
         <div class="banner banner-with-button">
             <div class="wrapper-button">
-                <a class="button-general button-secondary button-banner" href="#">
+                <a class="button-general button-secondary button-banner" href="proceso1.php">
                     Nomina a un <span class="btn-bold-txt">EXATEC</span>
                 </a>
             </div>
