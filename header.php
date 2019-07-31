@@ -1,3 +1,4 @@
+<?php include('config.php'); ?>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -15,7 +16,17 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
+  <?php
+    if(defined('environment') && environment == 'DEV'){ ?>
+      <base href='<?php echo devURL; ?>'>
+<?php }
+    else {?>
+      <base href='<?php echo prodURL; ?>'>
+  <?php }
+  ?>
+  <?php 
+  // <base href="http://www.tagindex.net/html/">
+  ?>
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -50,19 +61,19 @@
                       <ul class="navbar-nav align-self-stretch">
 
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#">Premios Exatec</a>
+                              <a class="nav-link" id="txt-menu" href="#link-premios">Premios Exatec</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#">¿A quién nominar?</a>
+                              <a class="nav-link" id="txt-menu" href="#link-nominarias">¿A quién nominar?</a>
                           </li> 
 
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#">Galería de ganadores</a>
+                              <a class="nav-link" id="txt-menu" href="#link-ganadores">Galería de ganadores</a>
                           </li>
                       
                           <li class="nav-item">
-                              <a class="nav-link" id="txt-menu" href="#">Preguntas Frecuentes</a>
+                              <a class="nav-link" id="txt-menu" href="questions.php">Preguntas Frecuentes</a>
                           </li>
 
                           <li class="nav-item">

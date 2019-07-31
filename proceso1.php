@@ -42,7 +42,7 @@
                     <div class="info-contact-content">
                         <h3 class="heading heading-03">1. Datos del contacto</h3>
                         <p class="info-contact-txt">
-                            Es posible que necesitemos de tu apoyo para verificar la información de tu nominado, por que te pedimos completar los siguientes campos. 
+                            Es posible que necesitemos de tu apoyo para verificar la información de tu nominado, por lo que te pedimos completar los siguientes campos. 
                         </p>
                     </div>
 
@@ -51,17 +51,18 @@
                         <div class="row">
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
-                                    <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-persona-moral" name="" class="input-checkbox" />
-                                        <label for="checkbox-persona-moral" class="label-checkbox"></label>
+                                    <div class="">
+                                        <label for="checkbox-persona-moral" class="label-checkbox">
+                                        <input type="radio" value="1" id="checkbox-persona-moral" name="persona" class="input-checkbox" />
+                                        </label>
                                     </div>
                                     <p class="input-label">Persona moral</p>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                                 <div class="wrapper-input wrapper-checkbox">
-                                    <div class="checkbox-custom">
-                                        <input type="checkbox" value="1" id="checkbox-persona-fisica" name="" class="input-checkbox" />
+                                    <div class="">
+                                        <input type="radio" id="checkbox-persona-fisica" name="persona" class="input-checkbox" />
                                         <label for="checkbox-persona-fisica" class="label-checkbox"></label>
                                     </div>
                                     <p class="input-label">Persona física</p>
