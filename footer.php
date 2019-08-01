@@ -6,14 +6,14 @@
 			</div>
 			<div class="col-12 col-lg-3 col-sm-3">  
 				<ul>
-					<li><a href="#">Ganadores</a></li>
-					<li><a href="#">Preguntas Frecuentes</a></li>
+					<li><a href="#link-ganadores">Ganadores</a></li>
+					<li><a href="questions.php">Preguntas Frecuentes</a></li>
 				</ul>
 			</div>  
 			<div class="col-12 col-lg-3 col-sm-3">
 				<ul>
-					<li><a href="#">¿A quién nominar?</a></li>
-					<li><a href="#">Premios Exatec</a></li>
+					<li><a href="#link-nominarias">¿A quién nominar?</a></li>
+					<li><a href="#link-premios">Premios Exatec</a></li>
 				</ul>
 			</div>
 			<div class="col-12 col-lg-5 col-sm-5">
@@ -47,16 +47,16 @@
 				</div>
 				<div class="col-12 col-lg-3 col-sm-4 offset-lg-2 col-sm-2 offset-sm-1">
 					<div class="social-media">
-					<a href="#">
+					<a href="https://www.facebook.com/exatec/" target="_blank">
 							<img class="icon-social" src="img/icon-fb.png" alt="">
 						</a>
-						<a href="#">
+						<a href="https://www.instagram.com/exatecoficial/" target="_blank">
 							<img class="icon-social" src="img/unnamed(1).png" alt="">
 						</a>
-						<a href="#">							
+						<a href="https://twitter.com/exatec" target="_blank">							
 							<img class="icon-social" src="img/unnamed(2).png" alt="">
 						</a>
-						<a href="#">
+						<a href="https://www.youtube.com/user/EXATECvideo" target="_blank">
 							<img class="icon-social" src="img/unnamed(3).png" alt="">
 						</a>
 					</div>
